@@ -10,7 +10,6 @@
 		4EA238CF1D7796DC005AACF9 /* Calibre.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EA238CE1D7796DC005AACF9 /* Calibre.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4EA238D61D7796DC005AACF9 /* Calibre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA238CB1D7796DC005AACF9 /* Calibre.framework */; };
 		4EA238DB1D7796DC005AACF9 /* CalibreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238DA1D7796DC005AACF9 /* CalibreTests.swift */; };
-		4EA238E71D779727005AACF9 /* Calibre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238E61D779727005AACF9 /* Calibre.swift */; };
 		4EA238E91D779785005AACF9 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238E81D779784005AACF9 /* Action.swift */; };
 		4EA238EB1D7797DE005AACF9 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238EA1D7797DE005AACF9 /* Subscription.swift */; };
 		4EA238ED1D7797FB005AACF9 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238EC1D7797FB005AACF9 /* State.swift */; };
@@ -36,7 +35,6 @@
 		4EA238D51D7796DC005AACF9 /* CalibreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalibreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EA238DA1D7796DC005AACF9 /* CalibreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibreTests.swift; sourceTree = "<group>"; };
 		4EA238DC1D7796DC005AACF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4EA238E61D779727005AACF9 /* Calibre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calibre.swift; sourceTree = "<group>"; };
 		4EA238E81D779784005AACF9 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		4EA238EA1D7797DE005AACF9 /* Subscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
 		4EA238EC1D7797FB005AACF9 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				4EA238E81D779784005AACF9 /* Action.swift */,
-				4EA238E61D779727005AACF9 /* Calibre.swift */,
 				4EA238EE1D779945005AACF9 /* Reducer.swift */,
 				4EA238EC1D7797FB005AACF9 /* State.swift */,
 				4EA238F21D779AE2005AACF9 /* Store.swift */,
@@ -218,7 +215,6 @@
 			files = (
 				4EA238F31D779AE2005AACF9 /* Store.swift in Sources */,
 				4EA238EB1D7797DE005AACF9 /* Subscription.swift in Sources */,
-				4EA238E71D779727005AACF9 /* Calibre.swift in Sources */,
 				4EA238E91D779785005AACF9 /* Action.swift in Sources */,
 				4EA238F11D7799FD005AACF9 /* Types.swift in Sources */,
 				4EA238EF1D779945005AACF9 /* Reducer.swift in Sources */,
