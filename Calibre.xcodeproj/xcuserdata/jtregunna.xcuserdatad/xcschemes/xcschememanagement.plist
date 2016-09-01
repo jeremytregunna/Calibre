@@ -4,10 +4,30 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Calibre copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Calibre.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>CalibreMac.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>CalibreTV.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>CalibreWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -18,6 +38,36 @@
 			<true/>
 		</dict>
 		<key>4EA238D41D7796DC005AACF9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4EA238F41D77B6AF005AACF9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4EA2390A1D77B6D7005AACF9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4EA239131D77B6D7005AACF9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4EA2392D1D77B7B6005AACF9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4EA239361D77B7B6005AACF9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4EA239501D77B906005AACF9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

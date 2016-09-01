@@ -1,13 +1,13 @@
 //
-//  CalibreTests.swift
-//  CalibreTests
+//  CalibreTVTests.swift
+//  CalibreTVTests
 //
 //  Created by Jeremy Tregunna on 8/31/16.
 //  Copyright © 2016 Greenshire, Inc. All rights reserved.
 //
 
 import XCTest
-@testable import Calibre
+@testable import CalibreTV
 
 struct TestState: StateType {
     var name: String
@@ -16,9 +16,9 @@ struct TestState: StateType {
 
 struct ChangeNameAction: Action {
     var type: String = "ChangeName"
-
+    
     let newName: String
-
+    
     init(newName: String) {
         self.newName = newName
     }
@@ -40,13 +40,13 @@ struct TestReducer: Reducer {
 struct AgeReducer: Reducer {
     func handleAction(action: Action, state: Int?) -> Int {
         guard let state = state else { return 0 }
-
+        
         switch action {
         case _ as BirthdayAction:
             return state + 1
         default: break
         }
-
+        
         return state
     }
 }
@@ -54,13 +54,13 @@ struct AgeReducer: Reducer {
 struct NameReducer: Reducer {
     func handleAction(action: Action, state: String?) -> String {
         guard let state = state else { return "unknown" }
-
+        
         switch action {
         case let cna as ChangeNameAction:
             return cna.newName
         default: break
         }
-
+        
         return state
     }
 }
@@ -70,7 +70,7 @@ class CalibreTests: XCTestCase, Subscriber {
     
     func newState(state: TestState) {
     }
-
+    
     override func setUp() {
         super.setUp()
         store = Store<TestState>(reducer: TestReducer(), state: nil)
@@ -80,7 +80,7 @@ class CalibreTests: XCTestCase, Subscriber {
         XCTAssert(store.state.age == 0)
         XCTAssert(store.state.name == "unknown")
     }
-
+    
     func testSubscriptions() {
         XCTAssert(store.subscriptions.count == 0)
         store.subscribe(self)
