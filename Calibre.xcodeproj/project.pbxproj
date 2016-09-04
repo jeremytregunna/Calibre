@@ -16,6 +16,8 @@
 		4EA238EF1D779945005AACF9 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238EE1D779945005AACF9 /* Reducer.swift */; };
 		4EA238F11D7799FD005AACF9 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238F01D7799FD005AACF9 /* Types.swift */; };
 		4EA238F31D779AE2005AACF9 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238F21D779AE2005AACF9 /* Store.swift */; };
+		4EA239C61D7CD754005AACF9 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA239C51D7CD754005AACF9 /* Navigation.swift */; };
+		4EA239CA1D7CDBFF005AACF9 /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA239C91D7CDBFF005AACF9 /* UIViewController+Navigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		4EA238EE1D779945005AACF9 /* Reducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
 		4EA238F01D7799FD005AACF9 /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		4EA238F21D779AE2005AACF9 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		4EA239C51D7CD754005AACF9 /* Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		4EA239C91D7CDBFF005AACF9 /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +87,8 @@
 		4EA238CD1D7796DC005AACF9 /* Calibre */ = {
 			isa = PBXGroup;
 			children = (
-				4EA238E81D779784005AACF9 /* Action.swift */,
-				4EA238EE1D779945005AACF9 /* Reducer.swift */,
-				4EA238EC1D7797FB005AACF9 /* State.swift */,
-				4EA238F21D779AE2005AACF9 /* Store.swift */,
-				4EA238EA1D7797DE005AACF9 /* Subscription.swift */,
-				4EA238F01D7799FD005AACF9 /* Types.swift */,
+				4EA239B01D79F141005AACF9 /* Core */,
+				4EA239AF1D79F137005AACF9 /* Navigation */,
 				4EA238CE1D7796DC005AACF9 /* Calibre.h */,
 				4EA238D01D7796DC005AACF9 /* Info.plist */,
 			);
@@ -102,6 +102,28 @@
 				4EA238DC1D7796DC005AACF9 /* Info.plist */,
 			);
 			path = CalibreTests;
+			sourceTree = "<group>";
+		};
+		4EA239AF1D79F137005AACF9 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				4EA239C51D7CD754005AACF9 /* Navigation.swift */,
+				4EA239C91D7CDBFF005AACF9 /* UIViewController+Navigation.swift */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		4EA239B01D79F141005AACF9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4EA238E81D779784005AACF9 /* Action.swift */,
+				4EA238EE1D779945005AACF9 /* Reducer.swift */,
+				4EA238EC1D7797FB005AACF9 /* State.swift */,
+				4EA238F21D779AE2005AACF9 /* Store.swift */,
+				4EA238EA1D7797DE005AACF9 /* Subscription.swift */,
+				4EA238F01D7799FD005AACF9 /* Types.swift */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,7 +240,9 @@
 				4EA238E91D779785005AACF9 /* Action.swift in Sources */,
 				4EA238F11D7799FD005AACF9 /* Types.swift in Sources */,
 				4EA238EF1D779945005AACF9 /* Reducer.swift in Sources */,
+				4EA239C61D7CD754005AACF9 /* Navigation.swift in Sources */,
 				4EA238ED1D7797FB005AACF9 /* State.swift in Sources */,
+				4EA239CA1D7CDBFF005AACF9 /* UIViewController+Navigation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +303,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -322,7 +346,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2,3,4";
@@ -337,6 +361,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -345,10 +370,11 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.greenshire.ios.library.Calibre;
+				PRODUCT_BUNDLE_IDENTIFIER = co.greenshire.library.Calibre;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvos macosx watchsimulator appletvsimulator watchos";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvos watchsimulator appletvsimulator watchos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -358,6 +384,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -366,10 +393,11 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.greenshire.ios.library.Calibre;
+				PRODUCT_BUNDLE_IDENTIFIER = co.greenshire.library.Calibre;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvos macosx watchsimulator appletvsimulator watchos";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvos watchsimulator appletvsimulator watchos";
 			};
 			name = Release;
 		};

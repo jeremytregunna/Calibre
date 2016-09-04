@@ -8,14 +8,14 @@
 
 import Foundation
 
-func withSpecificTypes<SpecificStateType, Action>(action: Action, state genericStateType: StateType?, @noescape function: (action: Action, state: SpecificStateType?) -> SpecificStateType) -> StateType {
-    guard let genericStateType = genericStateType else {
+func withTypes<SpecificState, Action>(action: Action, state genericState: StateType?, @noescape function: (action: Action, state: SpecificState?) -> SpecificState) -> StateType {
+    guard let genericState = genericState else {
         return function(action: action, state: nil) as! StateType
     }
 
-    guard let specificStateType = genericStateType as? SpecificStateType else {
-        return genericStateType
+    guard let specificState = genericState as? SpecificState else {
+        return genericState
     }
 
-    return function(action: action, state: specificStateType) as! StateType
+    return function(action: action, state: specificState) as! StateType
 }

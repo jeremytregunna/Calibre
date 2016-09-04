@@ -22,6 +22,6 @@ public protocol Reducer: AnyReducer {
 
 extension Reducer {
     public func _handleAction(action: Action, state: StateType?) -> StateType {
-        return withSpecificTypes(action, state: state, function: handleAction)
+        return withTypes(action, state: state, function: handleAction)
     }
 }
