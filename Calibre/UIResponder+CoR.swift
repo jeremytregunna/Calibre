@@ -10,8 +10,9 @@ import UIKit
 
 private var nextCommandResponderKey = "nextCommandResponderKey"
 
-extension UIResponder {
-    var nextCommandResponder: UIResponder? {
+// XXX: Make this more Swift-y.
+public extension UIResponder {
+    public var nextCommandResponder: UIResponder? {
         get {
             if let responder = objc_getAssociatedObject(self, &nextCommandResponderKey) as? UIResponder {
                 return responder
@@ -23,11 +24,11 @@ extension UIResponder {
         }
     }
 
-    func canPerformCommand(command: Command) -> Bool {
+    public func canPerformCommand(command: Command) -> Bool {
         return respondsToSelector(command.action)
     }
 
-    func targetForCommand(command: Command) -> UIResponder? {
+    public func targetForCommand(command: Command) -> UIResponder? {
         var implementor: UIResponder? = self
         while implementor != nil {
             if let implementor = implementor where implementor.canPerformCommand(command) {
@@ -38,7 +39,7 @@ extension UIResponder {
         return nil
     }
 
-    func sendCommand(command: Command?) -> Bool {
+    public func sendCommand(command: Command?) -> Bool {
         guard let command = command else { return false }
 
         if command.responder == nil {
