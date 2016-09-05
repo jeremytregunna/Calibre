@@ -16,6 +16,8 @@
 		4EA238EF1D779945005AACF9 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238EE1D779945005AACF9 /* Reducer.swift */; };
 		4EA238F11D7799FD005AACF9 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238F01D7799FD005AACF9 /* Types.swift */; };
 		4EA238F31D779AE2005AACF9 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238F21D779AE2005AACF9 /* Store.swift */; };
+		4EA239D71D7DCCBF005AACF9 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA239D61D7DCCBF005AACF9 /* Command.swift */; };
+		4EA239DA1D7DCD64005AACF9 /* UIResponder+CoR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA239D91D7DCD64005AACF9 /* UIResponder+CoR.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		4EA238EE1D779945005AACF9 /* Reducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
 		4EA238F01D7799FD005AACF9 /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		4EA238F21D779AE2005AACF9 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		4EA239D61D7DCCBF005AACF9 /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		4EA239D91D7DCD64005AACF9 /* UIResponder+CoR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+CoR.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				4EA239B01D79F141005AACF9 /* Core */,
+				4EA239D31D7DCAF8005AACF9 /* Navigation */,
 				4EA238CE1D7796DC005AACF9 /* Calibre.h */,
 				4EA238D01D7796DC005AACF9 /* Info.plist */,
 			);
@@ -110,6 +115,23 @@
 				4EA238F01D7799FD005AACF9 /* Types.swift */,
 			);
 			name = Core;
+			sourceTree = "<group>";
+		};
+		4EA239D31D7DCAF8005AACF9 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				4EA239D81D7DCD59005AACF9 /* Extensions */,
+				4EA239D61D7DCCBF005AACF9 /* Command.swift */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		4EA239D81D7DCD59005AACF9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4EA239D91D7DCD64005AACF9 /* UIResponder+CoR.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,8 +247,10 @@
 				4EA238EB1D7797DE005AACF9 /* Subscription.swift in Sources */,
 				4EA238E91D779785005AACF9 /* Action.swift in Sources */,
 				4EA238F11D7799FD005AACF9 /* Types.swift in Sources */,
+				4EA239D71D7DCCBF005AACF9 /* Command.swift in Sources */,
 				4EA238EF1D779945005AACF9 /* Reducer.swift in Sources */,
 				4EA238ED1D7797FB005AACF9 /* State.swift in Sources */,
+				4EA239DA1D7DCD64005AACF9 /* UIResponder+CoR.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
