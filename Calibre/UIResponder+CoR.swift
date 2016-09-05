@@ -55,6 +55,6 @@ public extension UIResponder {
     }
 
     private func performCommand(command: Command, on responder: UIResponder) {
-        responder.performSelector(command.action, withObject: command, afterDelay: 0)
+        responder.performSelector(command.action, withObject: command)
     }
 }

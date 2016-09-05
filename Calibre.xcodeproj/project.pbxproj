@@ -18,6 +18,7 @@
 		4EA238F31D779AE2005AACF9 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238F21D779AE2005AACF9 /* Store.swift */; };
 		4EA239D71D7DCCBF005AACF9 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA239D61D7DCCBF005AACF9 /* Command.swift */; };
 		4EA239DA1D7DCD64005AACF9 /* UIResponder+CoR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA239D91D7DCD64005AACF9 /* UIResponder+CoR.swift */; };
+		4ED70DCF1D7DE90400A4DFBB /* CommandChainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED70DCE1D7DE90400A4DFBB /* CommandChainTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		4EA238F21D779AE2005AACF9 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		4EA239D61D7DCCBF005AACF9 /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		4EA239D91D7DCD64005AACF9 /* UIResponder+CoR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+CoR.swift"; sourceTree = "<group>"; };
+		4ED70DCE1D7DE90400A4DFBB /* CommandChainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandChainTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,8 @@
 		4EA238D91D7796DC005AACF9 /* CalibreTests */ = {
 			isa = PBXGroup;
 			children = (
-				4EA238DA1D7796DC005AACF9 /* CalibreTests.swift */,
+				4ED70DCC1D7DE8DD00A4DFBB /* Core */,
+				4ED70DCD1D7DE8E400A4DFBB /* Navigation */,
 				4EA238DC1D7796DC005AACF9 /* Info.plist */,
 			);
 			path = CalibreTests;
@@ -132,6 +135,22 @@
 				4EA239D91D7DCD64005AACF9 /* UIResponder+CoR.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		4ED70DCC1D7DE8DD00A4DFBB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4EA238DA1D7796DC005AACF9 /* CalibreTests.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		4ED70DCD1D7DE8E400A4DFBB /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				4ED70DCE1D7DE90400A4DFBB /* CommandChainTests.swift */,
+			);
+			name = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EA238DB1D7796DC005AACF9 /* CalibreTests.swift in Sources */,
+				4ED70DCF1D7DE90400A4DFBB /* CommandChainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
