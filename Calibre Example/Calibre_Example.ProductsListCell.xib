@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -13,7 +14,32 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afK-g9-hpe">
+                        <rect key="frame" x="16" y="11" width="246" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWY-hK-JwE">
+                        <rect key="frame" x="270" y="11" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OWY-hK-JwE" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="29l-Ys-sKp"/>
+                    <constraint firstItem="afK-g9-hpe" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Jpg-CH-sJi"/>
+                    <constraint firstItem="afK-g9-hpe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="fw2-IH-r5A"/>
+                    <constraint firstItem="OWY-hK-JwE" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="iW3-1e-DjN"/>
+                    <constraint firstItem="OWY-hK-JwE" firstAttribute="leading" secondItem="afK-g9-hpe" secondAttribute="trailing" constant="8" id="vbe-CQ-28M"/>
+                </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="priceLabel" destination="OWY-hK-JwE" id="dtk-fv-mBg"/>
+                <outlet property="titleLabel" destination="afK-g9-hpe" id="Ous-zr-r6P"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

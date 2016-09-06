@@ -11,6 +11,16 @@ import UIKit
 class ProductsListCell: UITableViewCell {
     static let identifier = NSStringFromClass(ProductsListCell.self)
 
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var priceLabel: UILabel!
+
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        titleLabel.text = ""
+        priceLabel.text = ""
+        accessoryType = .None
+    }
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

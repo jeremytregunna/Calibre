@@ -11,4 +11,12 @@ import Foundation
 struct Product {
     let name: String
     let price: Int
+
+    var priceText: String? {
+        get {
+            let formatter = NSNumberFormatter()
+            formatter.numberStyle = .CurrencyStyle
+            return formatter.stringFromNumber(NSNumber(double: Double(price) / 100.0))
+        }
+    }
 }

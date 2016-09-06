@@ -21,7 +21,7 @@ class ProductsFlowController: UIResponder {
 extension ProductsFlowController: SplashPresentable {
     func showProducts(command: Commandable) {
         let products = ProductsListViewController()
-        products.nextCommandResponder = self
+//        products.nextCommandResponder = self
         navigationController.pushViewController(products, animated: true)
     }
 }

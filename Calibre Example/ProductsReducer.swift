@@ -14,12 +14,15 @@ struct ProductsReducer: Reducer {
 
         switch action {
         case let add as AddProductAction:
-            let formatter = NSNumberFormatter()
-            formatter.numberStyle = .CurrencyStyle
-            let formattedPrice = formatter.numberFromString(add.price) ?? NSNumber(int: 0)
-            let price = Int(round(formattedPrice.doubleValue * 100.0))
-            let product = Product(name: add.name, price: price)
-            state += [product]
+            // Only add a product if it doesn't already exist
+            if !state.contains({ $0.name == add.name }) {
+                let formatter = NSNumberFormatter()
+                formatter.numberStyle = .CurrencyStyle
+                let formattedPrice = formatter.numberFromString(add.price) ?? NSNumber(int: 0)
+                let price = Int(round(formattedPrice.doubleValue * 100.0))
+                let product = Product(name: add.name, price: price)
+                state += [product]
+            }
         default: break
         }
 

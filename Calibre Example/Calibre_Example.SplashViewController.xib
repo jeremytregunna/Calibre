@@ -7,7 +7,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashViewController" customModule="Calibre_Example" customModuleProvider="target">
             <connections>
-                <outlet property="showProductsButton" destination="OhC-fX-JzA" id="U5I-PR-pQf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -23,10 +22,19 @@
                         <action selector="showProductsTapped:" destination="-1" eventType="touchUpInside" id="mEg-3O-4SU"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qli-o0-gXT">
+                    <rect key="frame" x="234" y="323" width="133" height="30"/>
+                    <state key="normal" title="Add Seed Products"/>
+                    <connections>
+                        <action selector="addSeedProductsTapped:" destination="-1" eventType="touchUpInside" id="YFF-lr-ebY"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="OhC-fX-JzA" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="33i-VX-Tkr"/>
+                <constraint firstItem="qli-o0-gXT" firstAttribute="top" secondItem="OhC-fX-JzA" secondAttribute="bottom" constant="8" id="XPj-Hu-EmS"/>
+                <constraint firstItem="qli-o0-gXT" firstAttribute="centerX" secondItem="OhC-fX-JzA" secondAttribute="centerX" id="jkG-67-9Ag"/>
                 <constraint firstItem="OhC-fX-JzA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pfb-GI-8QA"/>
             </constraints>
         </view>
