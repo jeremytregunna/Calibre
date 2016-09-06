@@ -46,9 +46,7 @@ public class Store<State: StateType> {
     }
 
     func subscribe<SelectedState, S: Subscriber where S.SubscriberStateType == SelectedState>(subscriber: S, update: (State -> SelectedState)?) {
-        if subscriptions.contains({ $0.subscriber === subscriber }) {
-            return
-        }
+        guard isSubscribed(subscriber) == false else { return }
 
         subscriptions.append(Subscription(subscriber: subscriber, update: update))
 
@@ -61,5 +59,9 @@ public class Store<State: StateType> {
         if let index = subscriptions.indexOf({ return $0.subscriber === subscriber }) {
             subscriptions.removeAtIndex(index)
         }
+    }
+
+    private func isSubscribed<S: Subscriber>(subscriber: S) -> Bool {
+        return subscriptions.contains({ $0.subscriber === subscriber })
     }
 }
