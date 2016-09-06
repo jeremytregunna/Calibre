@@ -9,6 +9,6 @@
 import Foundation
 
 public protocol Command: class {
-    weak var responder: UIResponder? { get set }
+    weak var target: UIResponder? { get set }
     var action: Selector { get }
 }

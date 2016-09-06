@@ -39,11 +39,11 @@ public extension UIResponder {
         return nil
     }
 
-    public func sendCommand(command: Command?) -> Bool {
+    public func dispatch(command: Command?) -> Bool {
         guard let command = command else { return false }
 
-        if command.responder == nil {
-            command.responder = self
+        if command.target == nil {
+            command.target = self
         }
 
         if let target = targetForCommand(command) {
