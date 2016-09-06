@@ -11,7 +11,7 @@ import Foundation
 public class Store<State: StateType> {
     typealias SubscriptionType = Subscription<State>
 
-    var state: State! {
+    public private(set) var state: State! {
         didSet {
             subscriptions = subscriptions.filter({ $0.subscriber != nil })
             for sub in subscriptions {
@@ -23,7 +23,7 @@ public class Store<State: StateType> {
     private(set) var appReducer: AnyReducer
     private(set) var subscriptions: Array<SubscriptionType> = []
 
-    init(reducer: AnyReducer, state: State?) {
+    public init(reducer: AnyReducer, state: State?) {
         appReducer = reducer
         if let state = state {
             self.state = state
@@ -32,7 +32,7 @@ public class Store<State: StateType> {
         }
     }
 
-    func dispatch(action: Action) {
+    public func dispatch(action: Action) {
         state = appReducer._handleAction(action, state: state) as! State
         if let state = state {
             for subscription in subscriptions {
@@ -41,11 +41,11 @@ public class Store<State: StateType> {
         }
     }
 
-    func subscribe<S: Subscriber where S.SubscriberStateType == State>(subscriber: S) {
+    public func subscribe<S: Subscriber where S.SubscriberStateType == State>(subscriber: S) {
         subscribe(subscriber, update: nil)
     }
 
-    func subscribe<SelectedState, S: Subscriber where S.SubscriberStateType == SelectedState>(subscriber: S, update: (State -> SelectedState)?) {
+    public func subscribe<SelectedState, S: Subscriber where S.SubscriberStateType == SelectedState>(subscriber: S, update: (State -> SelectedState)?) {
         guard isSubscribed(subscriber) == false else { return }
 
         subscriptions.append(Subscription(subscriber: subscriber, update: update))
@@ -55,7 +55,7 @@ public class Store<State: StateType> {
         }
     }
 
-    func unsubscribe(subscriber: AnySubscriber) {
+    public func unsubscribe(subscriber: AnySubscriber) {
         if let index = subscriptions.indexOf({ return $0.subscriber === subscriber }) {
             subscriptions.removeAtIndex(index)
         }

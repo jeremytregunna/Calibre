@@ -19,10 +19,33 @@
 		4EA239D71D7DCCBF005AACF9 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA239D61D7DCCBF005AACF9 /* Command.swift */; };
 		4EA239DA1D7DCD64005AACF9 /* UIResponder+CoR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA239D91D7DCD64005AACF9 /* UIResponder+CoR.swift */; };
 		4ED70DCF1D7DE90400A4DFBB /* CommandChainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED70DCE1D7DE90400A4DFBB /* CommandChainTests.swift */; };
+		4ED70DD71D7F4D3A00A4DFBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED70DD61D7F4D3A00A4DFBB /* AppDelegate.swift */; };
+		4ED70DDE1D7F4D3A00A4DFBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ED70DDD1D7F4D3A00A4DFBB /* Assets.xcassets */; };
+		4ED70DE11D7F4D3A00A4DFBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED70DDF1D7F4D3A00A4DFBB /* LaunchScreen.storyboard */; };
+		4ED70DEB1D7F4D9F00A4DFBB /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED70DE91D7F4D9F00A4DFBB /* SplashViewController.swift */; };
+		4ED70DEC1D7F4D9F00A4DFBB /* Calibre_Example.SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ED70DEA1D7F4D9F00A4DFBB /* Calibre_Example.SplashViewController.xib */; };
+		4ED70DEE1D7F4F0200A4DFBB /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED70DED1D7F4F0200A4DFBB /* AppState.swift */; };
+		4ED70DF21D7F4F4C00A4DFBB /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED70DF11D7F4F4C00A4DFBB /* Product.swift */; };
+		4ED70DF51D7F4FC700A4DFBB /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED70DF41D7F4FC700A4DFBB /* AppReducer.swift */; };
+		4ED70DF71D7F501F00A4DFBB /* ProductsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED70DF61D7F501F00A4DFBB /* ProductsReducer.swift */; };
+		4ED70DFA1D7F50A900A4DFBB /* AddProductAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED70DF91D7F50A900A4DFBB /* AddProductAction.swift */; };
+		4ED70DFD1D7F52A600A4DFBB /* Calibre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA238CB1D7796DC005AACF9 /* Calibre.framework */; };
+		4ED70E001D7F666300A4DFBB /* ProductsFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED70DFF1D7F666300A4DFBB /* ProductsFlowController.swift */; };
+		4ED70E031D7F669F00A4DFBB /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED70E011D7F669F00A4DFBB /* ProductsListViewController.swift */; };
+		4ED70E041D7F669F00A4DFBB /* Calibre_Example.ProductsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ED70E021D7F669F00A4DFBB /* Calibre_Example.ProductsListViewController.xib */; };
+		4ED70E081D7F68C000A4DFBB /* ProductsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED70E061D7F68C000A4DFBB /* ProductsListCell.swift */; };
+		4ED70E091D7F68C000A4DFBB /* Calibre_Example.ProductsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ED70E071D7F68C000A4DFBB /* Calibre_Example.ProductsListCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		4EA238D71D7796DC005AACF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EA238C21D7796DC005AACF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EA238CA1D7796DC005AACF9;
+			remoteInfo = Calibre;
+		};
+		4ED70DFB1D7F52A100A4DFBB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4EA238C21D7796DC005AACF9 /* Project object */;
 			proxyType = 1;
@@ -47,6 +70,23 @@
 		4EA239D61D7DCCBF005AACF9 /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		4EA239D91D7DCD64005AACF9 /* UIResponder+CoR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+CoR.swift"; sourceTree = "<group>"; };
 		4ED70DCE1D7DE90400A4DFBB /* CommandChainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandChainTests.swift; sourceTree = "<group>"; };
+		4ED70DD41D7F4D3A00A4DFBB /* Calibre Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calibre Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ED70DD61D7F4D3A00A4DFBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4ED70DDD1D7F4D3A00A4DFBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4ED70DE01D7F4D3A00A4DFBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4ED70DE21D7F4D3A00A4DFBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4ED70DE91D7F4D9F00A4DFBB /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		4ED70DEA1D7F4D9F00A4DFBB /* Calibre_Example.SplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Calibre_Example.SplashViewController.xib; sourceTree = "<group>"; };
+		4ED70DED1D7F4F0200A4DFBB /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		4ED70DF11D7F4F4C00A4DFBB /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		4ED70DF41D7F4FC700A4DFBB /* AppReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		4ED70DF61D7F501F00A4DFBB /* ProductsReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsReducer.swift; sourceTree = "<group>"; };
+		4ED70DF91D7F50A900A4DFBB /* AddProductAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProductAction.swift; sourceTree = "<group>"; };
+		4ED70DFF1D7F666300A4DFBB /* ProductsFlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsFlowController.swift; sourceTree = "<group>"; };
+		4ED70E011D7F669F00A4DFBB /* ProductsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsListViewController.swift; sourceTree = "<group>"; };
+		4ED70E021D7F669F00A4DFBB /* Calibre_Example.ProductsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Calibre_Example.ProductsListViewController.xib; sourceTree = "<group>"; };
+		4ED70E061D7F68C000A4DFBB /* ProductsListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsListCell.swift; sourceTree = "<group>"; };
+		4ED70E071D7F68C000A4DFBB /* Calibre_Example.ProductsListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Calibre_Example.ProductsListCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +105,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4ED70DD11D7F4D3900A4DFBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ED70DFD1D7F52A600A4DFBB /* Calibre.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -73,6 +121,7 @@
 			children = (
 				4EA238CD1D7796DC005AACF9 /* Calibre */,
 				4EA238D91D7796DC005AACF9 /* CalibreTests */,
+				4ED70DD51D7F4D3A00A4DFBB /* Calibre Example */,
 				4EA238CC1D7796DC005AACF9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,6 +131,7 @@
 			children = (
 				4EA238CB1D7796DC005AACF9 /* Calibre.framework */,
 				4EA238D51D7796DC005AACF9 /* CalibreTests.xctest */,
+				4ED70DD41D7F4D3A00A4DFBB /* Calibre Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,6 +203,101 @@
 			name = Navigation;
 			sourceTree = "<group>";
 		};
+		4ED70DD51D7F4D3A00A4DFBB /* Calibre Example */ = {
+			isa = PBXGroup;
+			children = (
+				4ED70DF81D7F507400A4DFBB /* Actions */,
+				4ED70DE71D7F4D5000A4DFBB /* Application */,
+				4ED70DF31D7F4FBE00A4DFBB /* Reducers */,
+				4ED70DE81D7F4D5600A4DFBB /* Resources */,
+				4ED70DEF1D7F4F2A00A4DFBB /* State */,
+				4ED70DE61D7F4D4200A4DFBB /* View */,
+			);
+			path = "Calibre Example";
+			sourceTree = "<group>";
+		};
+		4ED70DE61D7F4D4200A4DFBB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4ED70E051D7F68A900A4DFBB /* Cells */,
+				4ED70DFE1D7F52D900A4DFBB /* Coordinators */,
+				4ED70E011D7F669F00A4DFBB /* ProductsListViewController.swift */,
+				4ED70DE91D7F4D9F00A4DFBB /* SplashViewController.swift */,
+				4ED70E021D7F669F00A4DFBB /* Calibre_Example.ProductsListViewController.xib */,
+				4ED70DEA1D7F4D9F00A4DFBB /* Calibre_Example.SplashViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4ED70DE71D7F4D5000A4DFBB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4ED70DD61D7F4D3A00A4DFBB /* AppDelegate.swift */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		4ED70DE81D7F4D5600A4DFBB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4ED70DDD1D7F4D3A00A4DFBB /* Assets.xcassets */,
+				4ED70DDF1D7F4D3A00A4DFBB /* LaunchScreen.storyboard */,
+				4ED70DE21D7F4D3A00A4DFBB /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4ED70DEF1D7F4F2A00A4DFBB /* State */ = {
+			isa = PBXGroup;
+			children = (
+				4ED70DF01D7F4F3900A4DFBB /* Models */,
+				4ED70DED1D7F4F0200A4DFBB /* AppState.swift */,
+			);
+			name = State;
+			sourceTree = "<group>";
+		};
+		4ED70DF01D7F4F3900A4DFBB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4ED70DF11D7F4F4C00A4DFBB /* Product.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		4ED70DF31D7F4FBE00A4DFBB /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				4ED70DF41D7F4FC700A4DFBB /* AppReducer.swift */,
+				4ED70DF61D7F501F00A4DFBB /* ProductsReducer.swift */,
+			);
+			name = Reducers;
+			sourceTree = "<group>";
+		};
+		4ED70DF81D7F507400A4DFBB /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				4ED70DF91D7F50A900A4DFBB /* AddProductAction.swift */,
+			);
+			name = Actions;
+			sourceTree = "<group>";
+		};
+		4ED70DFE1D7F52D900A4DFBB /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				4ED70DFF1D7F666300A4DFBB /* ProductsFlowController.swift */,
+			);
+			name = Coordinators;
+			sourceTree = "<group>";
+		};
+		4ED70E051D7F68A900A4DFBB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4ED70E061D7F68C000A4DFBB /* ProductsListCell.swift */,
+				4ED70E071D7F68C000A4DFBB /* Calibre_Example.ProductsListCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -203,6 +348,24 @@
 			productReference = 4EA238D51D7796DC005AACF9 /* CalibreTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		4ED70DD31D7F4D3900A4DFBB /* Calibre Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ED70DE51D7F4D3A00A4DFBB /* Build configuration list for PBXNativeTarget "Calibre Example" */;
+			buildPhases = (
+				4ED70DD01D7F4D3900A4DFBB /* Sources */,
+				4ED70DD11D7F4D3900A4DFBB /* Frameworks */,
+				4ED70DD21D7F4D3900A4DFBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4ED70DFC1D7F52A100A4DFBB /* PBXTargetDependency */,
+			);
+			name = "Calibre Example";
+			productName = "Calibre Example";
+			productReference = 4ED70DD41D7F4D3A00A4DFBB /* Calibre Example.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -220,6 +383,10 @@
 					4EA238D41D7796DC005AACF9 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
+					4ED70DD31D7F4D3900A4DFBB = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5UUW96Q8NT;
+					};
 				};
 			};
 			buildConfigurationList = 4EA238C51D7796DC005AACF9 /* Build configuration list for PBXProject "Calibre" */;
@@ -228,6 +395,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 4EA238C11D7796DC005AACF9;
 			productRefGroup = 4EA238CC1D7796DC005AACF9 /* Products */;
@@ -236,6 +404,7 @@
 			targets = (
 				4EA238CA1D7796DC005AACF9 /* Calibre */,
 				4EA238D41D7796DC005AACF9 /* CalibreTests */,
+				4ED70DD31D7F4D3900A4DFBB /* Calibre Example */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +421,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ED70DD21D7F4D3900A4DFBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ED70DE11D7F4D3A00A4DFBB /* LaunchScreen.storyboard in Resources */,
+				4ED70DEC1D7F4D9F00A4DFBB /* Calibre_Example.SplashViewController.xib in Resources */,
+				4ED70E041D7F669F00A4DFBB /* Calibre_Example.ProductsListViewController.xib in Resources */,
+				4ED70E091D7F68C000A4DFBB /* Calibre_Example.ProductsListCell.xib in Resources */,
+				4ED70DDE1D7F4D3A00A4DFBB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +463,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4ED70DD01D7F4D3900A4DFBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ED70DEE1D7F4F0200A4DFBB /* AppState.swift in Sources */,
+				4ED70DF21D7F4F4C00A4DFBB /* Product.swift in Sources */,
+				4ED70DF71D7F501F00A4DFBB /* ProductsReducer.swift in Sources */,
+				4ED70DFA1D7F50A900A4DFBB /* AddProductAction.swift in Sources */,
+				4ED70DEB1D7F4D9F00A4DFBB /* SplashViewController.swift in Sources */,
+				4ED70E081D7F68C000A4DFBB /* ProductsListCell.swift in Sources */,
+				4ED70DD71D7F4D3A00A4DFBB /* AppDelegate.swift in Sources */,
+				4ED70DF51D7F4FC700A4DFBB /* AppReducer.swift in Sources */,
+				4ED70E001D7F666300A4DFBB /* ProductsFlowController.swift in Sources */,
+				4ED70E031D7F669F00A4DFBB /* ProductsListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -290,7 +488,23 @@
 			target = 4EA238CA1D7796DC005AACF9 /* Calibre */;
 			targetProxy = 4EA238D71D7796DC005AACF9 /* PBXContainerItemProxy */;
 		};
+		4ED70DFC1D7F52A100A4DFBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4EA238CA1D7796DC005AACF9 /* Calibre */;
+			targetProxy = 4ED70DFB1D7F52A100A4DFBB /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4ED70DDF1D7F4D3A00A4DFBB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4ED70DE01D7F4D3A00A4DFBB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4EA238DD1D7796DC005AACF9 /* Debug */ = {
@@ -451,6 +665,32 @@
 			};
 			name = Release;
 		};
+		4ED70DE31D7F4D3A00A4DFBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Calibre Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.greenshire.example.Calibre-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4ED70DE41D7F4D3A00A4DFBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Calibre Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.greenshire.example.Calibre-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -480,6 +720,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		4ED70DE51D7F4D3A00A4DFBB /* Build configuration list for PBXNativeTarget "Calibre Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ED70DE31D7F4D3A00A4DFBB /* Debug */,
+				4ED70DE41D7F4D3A00A4DFBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
