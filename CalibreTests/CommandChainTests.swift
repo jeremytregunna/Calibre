@@ -10,21 +10,12 @@ import XCTest
 @testable import Calibre
 
 @objc protocol Blah: class {
-    func blah(command: ConcreteCommand)
+    func blah(command: Commandable)
 }
 
-class ConcreteCommand: NSObject, Command {
-    weak var target: UIResponder?
-    var action: Selector
-
-    init(target: UIResponder?, action: Selector) {
-        self.target = target
-        self.action = action
-    }
-}
 class Simple: UIResponder, Blah {
     var called: Bool = false
-    @objc func blah(command: ConcreteCommand) {
+    @objc func blah(command: Commandable) {
         called = true
     }
 }
@@ -71,19 +62,19 @@ class CommandChainTests: XCTestCase {
     }
 
     func testSimpleDelivery() {
-        let command = ConcreteCommand(target: simple, action: #selector(Blah.blah(_:)))
+        let command = BasicCommand(target: simple, action: #selector(Simple.blah(_:)))
         XCTAssertTrue(simple.dispatch(command))
         XCTAssertTrue(simple.called)
     }
 
     func testComplexDelivery1() {
-        let command = ConcreteCommand(target: complex1, action: #selector(Blah.blah(_:)))
+        let command = BasicCommand(target: complex1, action: #selector(Blah.blah(_:)))
         XCTAssertTrue(complex1.dispatch(command))
         XCTAssertTrue(complex1.simple.called)
     }
 
     func testComplexDelivery2() {
-        let command = ConcreteCommand(target: complex2, action: #selector(Blah.blah(_:)))
+        let command = BasicCommand(target: complex2, action: #selector(Blah.blah(_:)))
         XCTAssertTrue(complex2.dispatch(command))
         XCTAssertTrue(complex2.complex1.simple.called)
     }

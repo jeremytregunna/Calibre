@@ -24,11 +24,11 @@ public extension UIResponder {
         }
     }
 
-    public func canPerformCommand(command: Command) -> Bool {
+    public func canPerformCommand(command: Commandable) -> Bool {
         return respondsToSelector(command.action)
     }
 
-    public func targetForCommand(command: Command) -> UIResponder? {
+    public func targetForCommand(command: Commandable) -> UIResponder? {
         var implementor: UIResponder? = self
         while implementor != nil {
             if let implementor = implementor where implementor.canPerformCommand(command) {
@@ -39,7 +39,7 @@ public extension UIResponder {
         return nil
     }
 
-    public func dispatch(command: Command?) -> Bool {
+    public func dispatch(command: Commandable?) -> Bool {
         guard let command = command else { return false }
 
         if command.target == nil {
@@ -54,7 +54,7 @@ public extension UIResponder {
         return false
     }
 
-    private func performCommand(command: Command, on responder: UIResponder) {
+    private func performCommand(command: Commandable, on responder: UIResponder) {
         responder.performSelector(command.action, withObject: command)
     }
 }
