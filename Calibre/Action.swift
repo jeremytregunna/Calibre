@@ -8,10 +8,6 @@
 
 import Foundation
 
-public protocol Action {
-    var type: String { get }
-}
+public protocol Action {}
 
-public struct InitialAction: Action {
-    public var type: String = "InitialAction"
-}
+public struct InitialAction: Action {}
