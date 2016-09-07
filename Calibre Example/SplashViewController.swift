@@ -9,10 +9,6 @@
 import UIKit
 import Calibre
 
-@objc protocol SplashPresentable {
-    func showProducts(command: Commandable)
-}
-
 class SplashViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -29,7 +25,7 @@ class SplashViewController: UIViewController {
     }
 
     @IBAction func showProductsTapped(sender: UIButton) {
-        let command = BasicCommand(target: self, action: #selector(SplashPresentable.showProducts(_:)))
+        let command = BasicCommand(target: self, action: #selector(ProductFlow.showProducts(_:)))
         dispatch(command)
     }
 }

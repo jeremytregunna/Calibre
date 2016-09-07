@@ -35,6 +35,21 @@ class ProductsListViewController: UITableViewController {
         super.viewDidDisappear(animated)
     }
 
+    override func setEditing(editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+        tableView.setEditing(editing, animated: animated)
+        
+        let indexPath = NSIndexPath(forRow: store.state.products.count, inSection: 0)
+        
+        tableView.beginUpdates()
+        if editing {
+            tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+        } else {
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+        }
+        tableView.endUpdates()
+    }
+
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -50,7 +65,7 @@ class ProductsListViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(ProductsListCell.identifier, forIndexPath: indexPath) as! ProductsListCell
 
-        if editing {
+        if editing && indexPath.row == store.state.products.count {
             cell.titleLabel.text = "Add new product…"
             cell.priceLabel.text = ""
             cell.accessoryType = .DisclosureIndicator
@@ -68,21 +83,6 @@ class ProductsListViewController: UITableViewController {
         return false
     }
 
-    override func setEditing(editing: Bool, animated: Bool) {
-        super.setEditing(editing, animated: animated)
-        tableView.setEditing(editing, animated: animated)
-
-        let indexPath = NSIndexPath(forRow: store.state.products.count, inSection: 0)
-
-        tableView.beginUpdates()
-        if editing {
-            tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else {
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        }
-        tableView.endUpdates()
-    }
-
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             // Delete the row from the data source
@@ -93,15 +93,16 @@ class ProductsListViewController: UITableViewController {
         }
     }
 
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
     override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return true
+    }
+
+    // MARK: - UITableViewDelegate
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if editing && indexPath.row == tableView.numberOfRowsInSection(0) - 1 {
+            dispatch(BasicCommand(target: self, action: #selector(ProductFlow.showAddNewItem)))
+        }
     }
 }
 
