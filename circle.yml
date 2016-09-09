@@ -14,4 +14,4 @@ test:
       -sdk iphonesimulator
       -project Calibre.xcodeproj
       -scheme "Calibre"
-      build build-tests run-test
+      build test
