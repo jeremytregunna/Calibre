@@ -5,3 +5,4 @@ test:
   override:
     - xctool
       -reporter pretty
+      -scheme "Calibre"
