@@ -31,6 +31,10 @@ extension Subscriber {
 }
 
 struct Subscription<State: StateType> {
-    fileprivate(set) weak var subscriber: AnySubscriber?
+    #if swift(>=3)
+        fileprivate(set) weak var subscriber: AnySubscriber?
+    #else
+        private(set) weak var subscriber: AnySubscriber?
+    #endif
     let update: ((State) -> Any)?
 }

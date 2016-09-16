@@ -9,13 +9,19 @@
 import XCTest
 @testable import Calibre
 
+#if swift(>=3)
+    typealias CompatBundle = Bundle
+#else
+    typealias CompatBundle = NSBundle
+#endif
+
 @objc protocol Blah: class {
-    func blah(_ command: Commandable)
+    func blah(command: Commandable)
 }
 
 class Simple: UIResponder, Blah {
     var called: Bool = false
-    @objc func blah(_ command: Commandable) {
+    @objc func blah(command: Commandable) {
         called = true
     }
 }
@@ -23,7 +29,7 @@ class Simple: UIResponder, Blah {
 class Complex1: UIViewController {
     let simple: Simple
 
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: CompatBundle?) {
         simple = Simple()
         super.init(nibName: nil, bundle: nil)
         nextCommandResponder = simple
@@ -37,7 +43,7 @@ class Complex1: UIViewController {
 class Complex2: UIViewController {
     let complex1: Complex1
     
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: CompatBundle?) {
         complex1 = Complex1()
         super.init(nibName: nil, bundle: nil)
         nextCommandResponder = complex1
@@ -62,19 +68,19 @@ class CommandChainTests: XCTestCase {
     }
 
     func testSimpleDelivery() {
-        let command = BasicCommand(target: simple, action: #selector(Simple.blah(_:)))
+        let command = BasicCommand(target: simple, action: #selector(Simple.blah))
         XCTAssertTrue(simple.dispatch(command))
         XCTAssertTrue(simple.called)
     }
 
     func testComplexDelivery1() {
-        let command = BasicCommand(target: complex1, action: #selector(Blah.blah(_:)))
+        let command = BasicCommand(target: complex1, action: #selector(Blah.blah))
         XCTAssertTrue(complex1.dispatch(command))
         XCTAssertTrue(complex1.simple.called)
     }
 
     func testComplexDelivery2() {
-        let command = BasicCommand(target: complex2, action: #selector(Blah.blah(_:)))
+        let command = BasicCommand(target: complex2, action: #selector(Blah.blah))
         XCTAssertTrue(complex2.dispatch(command))
         XCTAssertTrue(complex2.complex1.simple.called)
     }

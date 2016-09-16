@@ -50,20 +50,17 @@ public class Store<State: StateType> {
 
     // MARK: - Swift 3.0
 
+    #if swift(>=3)
+
     public func dispatch(_ action: Action) {
         state = appReducer._handleAction(action, state: state) as! State
         if let state = state {
             for subscription in subscriptions {
-                #if swift(>=3)
-                    subscription.subscriber?._newState(state: state)
-                #else
-                    subscription.subscriber?._newState(state)
-                #endif
+                subscription.subscriber?._newState(state: state)
             }
         }
     }
 
-    #if swift(>=3)
     public func subscribe<S: Subscriber>(_ subscriber: S) where S.SubscriberStateType == State {
         subscribe(subscriber, update: nil)
     }
@@ -87,12 +84,22 @@ public class Store<State: StateType> {
     fileprivate func isSubscribed<S: Subscriber>(_ subscriber: S) -> Bool {
         return subscriptions.contains(where: { $0.subscriber === subscriber })
     }
-    #else
     
-    // MARK: - Swift 2
+    #else
 
+    // MARK: - Swift 2
+    
+    public func dispatch(action: Action) {
+        state = appReducer._handleAction(action, state: state) as! State
+        if let state = state {
+            for subscription in subscriptions {
+                subscription.subscriber?._newState(state)
+            }
+        }
+    }
+    
     public func subscribe<S: Subscriber where S.SubscriberStateType == State>(subscriber: S) {
-        subscribe(subscriber, update: nil))
+        subscribe(subscriber, update: nil)
     }
 
     public func subscribe<SelectedState, S: Subscriber where S.SubscriberStateType == SelectedState>(subscriber: S, update: (State -> SelectedState)?) {

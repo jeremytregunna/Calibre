@@ -8,20 +8,38 @@
 
 import Foundation
 
-typealias ReducerFunc = (_ action: Action, _ state: StateType?) -> StateType
+#if swift(>=3)
+    typealias ReducerFunc = (_ action: Action, _ state: StateType?) -> StateType
+#else
+    typealias ReducerFunc = (action: Action, state: StateType?) -> StateType
+#endif
 
 public protocol AnyReducer {
-    func _handleAction(_ action: Action, state: StateType?) -> StateType
+    #if swift(>=3)
+        func _handleAction(_ action: Action, state: StateType?) -> StateType
+    #else
+        func _handleAction(action: Action, state: StateType?) -> StateType
+    #endif
 }
 
 public protocol Reducer: AnyReducer {
     associatedtype ReducerStateType
 
-    func handleAction(_ action: Action, state: ReducerStateType?) -> ReducerStateType
+    #if swift(>=3)
+        func handleAction(_ action: Action, state: ReducerStateType?) -> ReducerStateType
+    #else
+        func handleAction(action: Action, state: ReducerStateType?) -> ReducerStateType
+    #endif
 }
 
 extension Reducer {
-    public func _handleAction(_ action: Action, state: StateType?) -> StateType {
-        return withTypes(action, state: state, function: handleAction)
-    }
+    #if swift(>=3)
+        public func _handleAction(_ action: Action, state: StateType?) -> StateType {
+            return withTypes(action, state: state, function: handleAction)
+        }
+    #else
+        public func _handleAction(action: Action, state: StateType?) -> StateType {
+            return withTypes(action, state: state, function: handleAction)
+        }
+    #endif
 }
