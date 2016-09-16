@@ -13,12 +13,24 @@ import Foundation
     var action: Selector { get }
 }
 
-public class BasicCommand: Commandable {
-    @objc public weak var target: UIResponder?
-    @objc public private(set) var action: Selector
+#if swift(>=3)
+open class BasicCommand: Commandable {
+    @objc open weak var target: UIResponder?
+    @objc open fileprivate(set) var action: Selector
 
     public required init(target: UIResponder?, action: Selector) {
         self.target = target
         self.action = action
     }
 }
+#else
+    public class BasicCommand: Commandable {
+        @objc public weak var target: UIResponder?
+        @objc public private(set) var action: Selector
+    
+        public required init(target: UIResponder?, action: Selector) {
+            self.target = target
+            self.action = action
+        }
+    }
+#endif

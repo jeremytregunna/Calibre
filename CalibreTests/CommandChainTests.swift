@@ -10,12 +10,12 @@ import XCTest
 @testable import Calibre
 
 @objc protocol Blah: class {
-    func blah(command: Commandable)
+    func blah(_ command: Commandable)
 }
 
 class Simple: UIResponder, Blah {
     var called: Bool = false
-    @objc func blah(command: Commandable) {
+    @objc func blah(_ command: Commandable) {
         called = true
     }
 }
@@ -23,7 +23,7 @@ class Simple: UIResponder, Blah {
 class Complex1: UIViewController {
     let simple: Simple
 
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         simple = Simple()
         super.init(nibName: nil, bundle: nil)
         nextCommandResponder = simple
@@ -37,7 +37,7 @@ class Complex1: UIViewController {
 class Complex2: UIViewController {
     let complex1: Complex1
     
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         complex1 = Complex1()
         super.init(nibName: nil, bundle: nil)
         nextCommandResponder = complex1

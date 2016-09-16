@@ -29,7 +29,7 @@ struct BirthdayAction: Action {
 }
 
 struct TestReducer: Reducer {
-    func handleAction(action: Action, state: TestState?) -> TestState {
+    func handleAction(_ action: Action, state: TestState?) -> TestState {
         return TestState(
             name: NameReducer().handleAction(action, state: state?.name),
             age: AgeReducer().handleAction(action, state: state?.age)
@@ -38,7 +38,7 @@ struct TestReducer: Reducer {
 }
 
 struct AgeReducer: Reducer {
-    func handleAction(action: Action, state: Int?) -> Int {
+    func handleAction(_ action: Action, state: Int?) -> Int {
         guard let state = state else { return 0 }
 
         switch action {
@@ -52,7 +52,7 @@ struct AgeReducer: Reducer {
 }
 
 struct NameReducer: Reducer {
-    func handleAction(action: Action, state: String?) -> String {
+    func handleAction(_ action: Action, state: String?) -> String {
         guard let state = state else { return "unknown" }
 
         switch action {
@@ -66,6 +66,8 @@ struct NameReducer: Reducer {
 }
 
 class CalibreTests: XCTestCase, Subscriber {
+    typealias SubscriberStateType = TestState
+
     var store: Store<TestState>!
     
     func newState(state: TestState) {

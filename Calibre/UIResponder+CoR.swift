@@ -17,29 +17,43 @@ public extension UIResponder {
             if let responder = objc_getAssociatedObject(self, &nextCommandResponderKey) as? UIResponder {
                 return responder
             }
-            return nextResponder()
+            #if swift(>=3)
+                return next
+            #else
+                return nextResponder()
+            #endif
         }
         set {
             objc_setAssociatedObject(self, &nextCommandResponderKey, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
 
-    public func canPerformCommand(command: Commandable) -> Bool {
-        return respondsToSelector(command.action)
+    public func canPerformCommand(_ command: Commandable) -> Bool {
+        #if swift(>=3)
+            return responds(to: command.action)
+        #else
+            return respondsToSelector(command.action)
+        #endif
     }
 
-    public func targetForCommand(command: Commandable) -> UIResponder? {
+    public func targetForCommand(_ command: Commandable) -> UIResponder? {
         var implementor: UIResponder? = self
         while implementor != nil {
-            if let implementor = implementor where implementor.canPerformCommand(command) {
-                return implementor
-            }
+            #if swift(>=3)
+                if let implementor = implementor, implementor.canPerformCommand(command) {
+                    return implementor
+                }
+            #else
+                if let implementor = implementor where implementor.canPerformCommand(command) {
+                    return implementor
+                }
+            #endif
             implementor = implementor?.nextCommandResponder
         }
         return nil
     }
 
-    public func dispatch(command: Commandable?) -> Bool {
+    public func dispatch(_ command: Commandable?) -> Bool {
         guard let command = command else { return false }
 
         if command.target == nil {
@@ -54,7 +68,13 @@ public extension UIResponder {
         return false
     }
 
-    private func performCommand(command: Commandable, on responder: UIResponder) {
-        responder.performSelector(command.action, withObject: command)
-    }
+    #if swift(>=3)
+        fileprivate func performCommand(_ command: Commandable, on responder: UIResponder) {
+            responder.perform(command.action, with: command)
+        }
+    #else
+        private func performCommand(command: Commandable, on responder: UIResponder) {
+            responder.performSelector(command.action, withObject: command)
+        }
+    #endif
 }
