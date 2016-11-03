@@ -14,6 +14,11 @@ class SplashViewController: UIViewController {
         super.viewWillAppear(animated)
         store.subscribe(self)
     }
+    
+    override func viewWillDisappear(animated: Bool) {
+        store.unsubscribe(self)
+        super.viewWillDisappear(animated)
+    }
 
     @IBAction func addSeedProductsTapped(sender: UIButton) {
         let seedProductNames = ["Bacon", "Gallo Pinto", "Potato"]
