@@ -1,6 +1,5 @@
 Pod::Spec.new do |s|
   s.ios.deployment_target = '8.1'
-  s.osx.deployment_target = '10.9'
   s.name                  = 'Calibre'
   s.version               = '1.0.0'
   s.license               = { :type => 'MIT', :file => 'LICENSE' }
