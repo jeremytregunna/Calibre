@@ -37,6 +37,11 @@
                BlueprintName = "CalibreTests"
                ReferencedContainer = "container:Calibre.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "CommandChainTests">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>
