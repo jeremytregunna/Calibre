@@ -6,7 +6,11 @@
 //  Copyright © 2016 Greenshire, Inc. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
+#elseif os(OSX)
+import Cocoa
+#endif
 
 private var nextCommandResponderKey = "nextCommandResponderKey"
 
