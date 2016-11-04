@@ -12,9 +12,11 @@ CocoaPods:
 
 ```
 pod "Greenshire/Calibre"
+```
 
-# or...
+or...
 
+```
 pod "Greenshire/Calibre", git: 'https://github.com/Greenshire/Calibre.git', branch: 'master'
 ```
 
