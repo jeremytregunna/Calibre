@@ -10,7 +10,6 @@ import UIKit
 import Calibre
 
 class ProductsListViewController: UITableViewController {
-        
     override func viewDidLoad() {
         super.viewDidLoad()
 
