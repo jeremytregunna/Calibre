@@ -10,19 +10,19 @@ Calibre is a Redux-ish development architecture for building reactive applicatio
 
 CocoaPods:
 
-`
+```
 pod "Greenshire/Calibre"
 
 # or...
 
 pod "Greenshire/Calibre", git: 'https://github.com/Greenshire/Calibre.git', branch: 'master'
-`
+```
 
 To use Carthage, add to your Cartfile:
 
-`
+```
 github "Greenshire/Calibre" "master"
-`
+```
 
 ## License
 
