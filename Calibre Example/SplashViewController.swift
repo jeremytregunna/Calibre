@@ -21,17 +21,14 @@ class SplashViewController: UIViewController {
     }
 
     @IBAction func addSeedProductsTapped(sender: UIButton) {
-        let seedProductNames = ["Bacon", "Gallo Pinto", "Potato"]
-        let seedProductPrices = ["$1.28", "$5.12", "$2.56"]
-        for index in 0..<seedProductNames.count {
-            let addProduct = AddProductAction(name: seedProductNames[index], price: seedProductPrices[index])
-            store.dispatch(addProduct)
-        }
+        let addSeed = AddSeeds()
+        store.fire(addSeed)
     }
 
     @IBAction func showProductsTapped(sender: UIButton) {
-        let command = BasicCommand(target: self, action: #selector(ProductFlow.showProducts(_:)))
-        dispatch(command)
+        let products = ProductsListViewController()
+        let push = PushViewAction(view: products, navigationController: self.navigationController)
+        store.dispatch(push)
     }
 }
 

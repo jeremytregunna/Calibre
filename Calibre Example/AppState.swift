@@ -9,5 +9,6 @@
 import Calibre
 
 struct AppState: StateType {
+    var navigationState: NavigationState
     var products: [Product] = []
 }
