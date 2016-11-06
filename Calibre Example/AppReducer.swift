@@ -11,6 +11,7 @@ import Calibre
 struct AppReducer: Reducer {
     func handleAction(action: Action, state: AppState?) -> AppState {
         return AppState(
+            navigationState: NavigationReducer().handleAction(action, state: state?.navigationState),
             products: ProductsReducer().handleAction(action, state: state?.products)
         )
     }

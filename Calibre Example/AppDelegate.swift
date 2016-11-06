@@ -14,14 +14,11 @@ let store = Store<AppState>(reducer: AppReducer(), state: nil)
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
-    var productsFlow: ProductsFlowController?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         let splash = SplashViewController()
         let nav = UINavigationController(rootViewController: splash)
-        productsFlow = ProductsFlowController(navigationController: nav)
-        splash.nextCommandResponder = productsFlow
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
         return true

@@ -55,10 +55,16 @@ public class Store<State: StateType> {
     public func dispatch(_ action: Action) {
         state = appReducer._handleAction(action, state: state) as! State
         if let state = state {
-            for subscription in subscriptions {
-                subscription.subscriber?._newState(state: state)
+            DispatchQueue.main.async {
+                for subscription in self.subscriptions {
+                    subscription.subscriber?._newState(state: state)
+                }
             }
         }
+    }
+
+    public func fire<C: Command>(_ command: C) where C.State == State {
+        command.execute(state: state, store: self)
     }
 
     public func subscribe<S: Subscriber>(_ subscriber: S) where S.SubscriberStateType == State {
@@ -92,10 +98,16 @@ public class Store<State: StateType> {
     public func dispatch(action: Action) {
         state = appReducer._handleAction(action, state: state) as! State
         if let state = state {
-            for subscription in subscriptions {
-                subscription.subscriber?._newState(state)
+            dispatch_async(dispatch_get_main_queue()) {
+                for subscription in self.subscriptions {
+                    subscription.subscriber?._newState(state)
+                }
             }
         }
+    }
+
+    public func fire<C: Command where C.State == State>(command: C) {
+        command.execute(state, store: self)
     }
     
     public func subscribe<S: Subscriber where S.SubscriberStateType == State>(subscriber: S) {

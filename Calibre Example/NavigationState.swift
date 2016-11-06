@@ -1,5 +1,5 @@
 //
-//  Command.swift
+//  NavigationState.swift
 //  Calibre
 //
 //  Created by Jeremy Tregunna on 11/6/16.
@@ -7,9 +7,8 @@
 //
 
 import Foundation
+import Calibre
 
-public protocol Command {
-    associatedtype State: StateType
-
-    func execute(state: State, store: Store<State>)
+struct NavigationState {
+    var currentView: UIViewController?
 }

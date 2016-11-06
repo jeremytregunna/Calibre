@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E030D721DCFC25C0065D0F9 /* NavigationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E030D711DCFC25C0065D0F9 /* NavigationState.swift */; };
+		4E030D741DCFC2840065D0F9 /* NavigationReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E030D731DCFC2840065D0F9 /* NavigationReducer.swift */; };
+		4E030D791DCFC2B50065D0F9 /* DismissViewAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E030D751DCFC2B50065D0F9 /* DismissViewAction.swift */; };
+		4E030D7A1DCFC2B50065D0F9 /* PopNavigationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E030D761DCFC2B50065D0F9 /* PopNavigationAction.swift */; };
+		4E030D7B1DCFC2B50065D0F9 /* PresentViewAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E030D771DCFC2B50065D0F9 /* PresentViewAction.swift */; };
+		4E030D7C1DCFC2B50065D0F9 /* PushViewAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E030D781DCFC2B50065D0F9 /* PushViewAction.swift */; };
+		4E030D7F1DCFC4C30065D0F9 /* AddSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E030D7E1DCFC4C30065D0F9 /* AddSeeds.swift */; };
+		4E857B321DCFB438009EAB95 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E857B311DCFB438009EAB95 /* Command.swift */; };
 		4EA238CF1D7796DC005AACF9 /* Calibre.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EA238CE1D7796DC005AACF9 /* Calibre.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4EA238D61D7796DC005AACF9 /* Calibre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA238CB1D7796DC005AACF9 /* Calibre.framework */; };
 		4EA238DB1D7796DC005AACF9 /* CalibreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238DA1D7796DC005AACF9 /* CalibreTests.swift */; };
@@ -16,9 +24,6 @@
 		4EA238EF1D779945005AACF9 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238EE1D779945005AACF9 /* Reducer.swift */; };
 		4EA238F11D7799FD005AACF9 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238F01D7799FD005AACF9 /* Types.swift */; };
 		4EA238F31D779AE2005AACF9 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238F21D779AE2005AACF9 /* Store.swift */; };
-		4EA239D71D7DCCBF005AACF9 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA239D61D7DCCBF005AACF9 /* Command.swift */; };
-		4EA239DA1D7DCD64005AACF9 /* UIResponder+CoR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA239D91D7DCD64005AACF9 /* UIResponder+CoR.swift */; };
-		4ED70DCF1D7DE90400A4DFBB /* CommandChainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED70DCE1D7DE90400A4DFBB /* CommandChainTests.swift */; };
 		4ED70DD71D7F4D3A00A4DFBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED70DD61D7F4D3A00A4DFBB /* AppDelegate.swift */; };
 		4ED70DDE1D7F4D3A00A4DFBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ED70DDD1D7F4D3A00A4DFBB /* Assets.xcassets */; };
 		4ED70DE11D7F4D3A00A4DFBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED70DDF1D7F4D3A00A4DFBB /* LaunchScreen.storyboard */; };
@@ -30,7 +35,6 @@
 		4ED70DF71D7F501F00A4DFBB /* ProductsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED70DF61D7F501F00A4DFBB /* ProductsReducer.swift */; };
 		4ED70DFA1D7F50A900A4DFBB /* AddProductAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED70DF91D7F50A900A4DFBB /* AddProductAction.swift */; };
 		4ED70DFD1D7F52A600A4DFBB /* Calibre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA238CB1D7796DC005AACF9 /* Calibre.framework */; };
-		4ED70E001D7F666300A4DFBB /* ProductsFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED70DFF1D7F666300A4DFBB /* ProductsFlowController.swift */; };
 		4ED70E031D7F669F00A4DFBB /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED70E011D7F669F00A4DFBB /* ProductsListViewController.swift */; };
 		4ED70E041D7F669F00A4DFBB /* Calibre_Example.ProductsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ED70E021D7F669F00A4DFBB /* Calibre_Example.ProductsListViewController.xib */; };
 		4ED70E081D7F68C000A4DFBB /* ProductsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED70E061D7F68C000A4DFBB /* ProductsListCell.swift */; };
@@ -55,6 +59,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E030D711DCFC25C0065D0F9 /* NavigationState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationState.swift; sourceTree = "<group>"; };
+		4E030D731DCFC2840065D0F9 /* NavigationReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationReducer.swift; sourceTree = "<group>"; };
+		4E030D751DCFC2B50065D0F9 /* DismissViewAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissViewAction.swift; sourceTree = "<group>"; };
+		4E030D761DCFC2B50065D0F9 /* PopNavigationAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopNavigationAction.swift; sourceTree = "<group>"; };
+		4E030D771DCFC2B50065D0F9 /* PresentViewAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentViewAction.swift; sourceTree = "<group>"; };
+		4E030D781DCFC2B50065D0F9 /* PushViewAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushViewAction.swift; sourceTree = "<group>"; };
+		4E030D7E1DCFC4C30065D0F9 /* AddSeeds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSeeds.swift; sourceTree = "<group>"; };
+		4E857B311DCFB438009EAB95 /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		4EA238CB1D7796DC005AACF9 /* Calibre.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Calibre.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EA238CE1D7796DC005AACF9 /* Calibre.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Calibre.h; sourceTree = "<group>"; };
 		4EA238D01D7796DC005AACF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,9 +79,6 @@
 		4EA238EE1D779945005AACF9 /* Reducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
 		4EA238F01D7799FD005AACF9 /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		4EA238F21D779AE2005AACF9 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
-		4EA239D61D7DCCBF005AACF9 /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
-		4EA239D91D7DCD64005AACF9 /* UIResponder+CoR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+CoR.swift"; sourceTree = "<group>"; };
-		4ED70DCE1D7DE90400A4DFBB /* CommandChainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandChainTests.swift; sourceTree = "<group>"; };
 		4ED70DD41D7F4D3A00A4DFBB /* Calibre Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calibre Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ED70DD61D7F4D3A00A4DFBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4ED70DDD1D7F4D3A00A4DFBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,7 +91,6 @@
 		4ED70DF41D7F4FC700A4DFBB /* AppReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 		4ED70DF61D7F501F00A4DFBB /* ProductsReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsReducer.swift; sourceTree = "<group>"; };
 		4ED70DF91D7F50A900A4DFBB /* AddProductAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProductAction.swift; sourceTree = "<group>"; };
-		4ED70DFF1D7F666300A4DFBB /* ProductsFlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsFlowController.swift; sourceTree = "<group>"; };
 		4ED70E011D7F669F00A4DFBB /* ProductsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsListViewController.swift; sourceTree = "<group>"; };
 		4ED70E021D7F669F00A4DFBB /* Calibre_Example.ProductsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Calibre_Example.ProductsListViewController.xib; sourceTree = "<group>"; };
 		4ED70E061D7F68C000A4DFBB /* ProductsListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsListCell.swift; sourceTree = "<group>"; };
@@ -116,6 +124,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E030D7D1DCFC2BB0065D0F9 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				4E030D751DCFC2B50065D0F9 /* DismissViewAction.swift */,
+				4E030D761DCFC2B50065D0F9 /* PopNavigationAction.swift */,
+				4E030D771DCFC2B50065D0F9 /* PresentViewAction.swift */,
+				4E030D781DCFC2B50065D0F9 /* PushViewAction.swift */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
 		4EA238C11D7796DC005AACF9 = {
 			isa = PBXGroup;
 			children = (
@@ -140,7 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				4EA239B01D79F141005AACF9 /* Core */,
-				4EA239D31D7DCAF8005AACF9 /* Navigation */,
 				4EA238CE1D7796DC005AACF9 /* Calibre.h */,
 				4EA238D01D7796DC005AACF9 /* Info.plist */,
 			);
@@ -151,7 +169,6 @@
 			isa = PBXGroup;
 			children = (
 				4ED70DCC1D7DE8DD00A4DFBB /* Core */,
-				4ED70DCD1D7DE8E400A4DFBB /* Navigation */,
 				4EA238DC1D7796DC005AACF9 /* Info.plist */,
 			);
 			path = CalibreTests;
@@ -161,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				4EA238E81D779784005AACF9 /* Action.swift */,
+				4E857B311DCFB438009EAB95 /* Command.swift */,
 				4EA238EE1D779945005AACF9 /* Reducer.swift */,
 				4EA238EC1D7797FB005AACF9 /* State.swift */,
 				4EA238F21D779AE2005AACF9 /* Store.swift */,
@@ -170,37 +188,12 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
-		4EA239D31D7DCAF8005AACF9 /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				4EA239D81D7DCD59005AACF9 /* Extensions */,
-				4EA239D61D7DCCBF005AACF9 /* Command.swift */,
-			);
-			name = Navigation;
-			sourceTree = "<group>";
-		};
-		4EA239D81D7DCD59005AACF9 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				4EA239D91D7DCD64005AACF9 /* UIResponder+CoR.swift */,
-			);
-			name = Extensions;
-			sourceTree = "<group>";
-		};
 		4ED70DCC1D7DE8DD00A4DFBB /* Core */ = {
 			isa = PBXGroup;
 			children = (
 				4EA238DA1D7796DC005AACF9 /* CalibreTests.swift */,
 			);
 			name = Core;
-			sourceTree = "<group>";
-		};
-		4ED70DCD1D7DE8E400A4DFBB /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				4ED70DCE1D7DE90400A4DFBB /* CommandChainTests.swift */,
-			);
-			name = Navigation;
 			sourceTree = "<group>";
 		};
 		4ED70DD51D7F4D3A00A4DFBB /* Calibre Example */ = {
@@ -220,7 +213,6 @@
 			isa = PBXGroup;
 			children = (
 				4ED70E051D7F68A900A4DFBB /* Cells */,
-				4ED70DFE1D7F52D900A4DFBB /* Coordinators */,
 				4ED70E011D7F669F00A4DFBB /* ProductsListViewController.swift */,
 				4ED70DE91D7F4D9F00A4DFBB /* SplashViewController.swift */,
 				4ED70E021D7F669F00A4DFBB /* Calibre_Example.ProductsListViewController.xib */,
@@ -252,6 +244,7 @@
 			children = (
 				4ED70DF01D7F4F3900A4DFBB /* Models */,
 				4ED70DED1D7F4F0200A4DFBB /* AppState.swift */,
+				4E030D711DCFC25C0065D0F9 /* NavigationState.swift */,
 			);
 			name = State;
 			sourceTree = "<group>";
@@ -269,6 +262,7 @@
 			children = (
 				4ED70DF41D7F4FC700A4DFBB /* AppReducer.swift */,
 				4ED70DF61D7F501F00A4DFBB /* ProductsReducer.swift */,
+				4E030D731DCFC2840065D0F9 /* NavigationReducer.swift */,
 			);
 			name = Reducers;
 			sourceTree = "<group>";
@@ -276,17 +270,11 @@
 		4ED70DF81D7F507400A4DFBB /* Actions */ = {
 			isa = PBXGroup;
 			children = (
+				4E030D7D1DCFC2BB0065D0F9 /* Navigation */,
 				4ED70DF91D7F50A900A4DFBB /* AddProductAction.swift */,
+				4E030D7E1DCFC4C30065D0F9 /* AddSeeds.swift */,
 			);
 			name = Actions;
-			sourceTree = "<group>";
-		};
-		4ED70DFE1D7F52D900A4DFBB /* Coordinators */ = {
-			isa = PBXGroup;
-			children = (
-				4ED70DFF1D7F666300A4DFBB /* ProductsFlowController.swift */,
-			);
-			name = Coordinators;
 			sourceTree = "<group>";
 		};
 		4ED70E051D7F68A900A4DFBB /* Cells */ = {
@@ -449,10 +437,9 @@
 				4EA238EB1D7797DE005AACF9 /* Subscription.swift in Sources */,
 				4EA238E91D779785005AACF9 /* Action.swift in Sources */,
 				4EA238F11D7799FD005AACF9 /* Types.swift in Sources */,
-				4EA239D71D7DCCBF005AACF9 /* Command.swift in Sources */,
+				4E857B321DCFB438009EAB95 /* Command.swift in Sources */,
 				4EA238EF1D779945005AACF9 /* Reducer.swift in Sources */,
 				4EA238ED1D7797FB005AACF9 /* State.swift in Sources */,
-				4EA239DA1D7DCD64005AACF9 /* UIResponder+CoR.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,7 +448,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EA238DB1D7796DC005AACF9 /* CalibreTests.swift in Sources */,
-				4ED70DCF1D7DE90400A4DFBB /* CommandChainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,15 +455,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E030D741DCFC2840065D0F9 /* NavigationReducer.swift in Sources */,
 				4ED70DEE1D7F4F0200A4DFBB /* AppState.swift in Sources */,
 				4ED70DF21D7F4F4C00A4DFBB /* Product.swift in Sources */,
 				4ED70DF71D7F501F00A4DFBB /* ProductsReducer.swift in Sources */,
 				4ED70DFA1D7F50A900A4DFBB /* AddProductAction.swift in Sources */,
+				4E030D791DCFC2B50065D0F9 /* DismissViewAction.swift in Sources */,
 				4ED70DEB1D7F4D9F00A4DFBB /* SplashViewController.swift in Sources */,
+				4E030D721DCFC25C0065D0F9 /* NavigationState.swift in Sources */,
+				4E030D7F1DCFC4C30065D0F9 /* AddSeeds.swift in Sources */,
+				4E030D7C1DCFC2B50065D0F9 /* PushViewAction.swift in Sources */,
 				4ED70E081D7F68C000A4DFBB /* ProductsListCell.swift in Sources */,
 				4ED70DD71D7F4D3A00A4DFBB /* AppDelegate.swift in Sources */,
+				4E030D7B1DCFC2B50065D0F9 /* PresentViewAction.swift in Sources */,
 				4ED70DF51D7F4FC700A4DFBB /* AppReducer.swift in Sources */,
-				4ED70E001D7F666300A4DFBB /* ProductsFlowController.swift in Sources */,
+				4E030D7A1DCFC2B50065D0F9 /* PopNavigationAction.swift in Sources */,
 				4ED70E031D7F669F00A4DFBB /* ProductsListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
