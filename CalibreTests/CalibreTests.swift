@@ -28,6 +28,17 @@ struct BirthdayAction: Action {
     var type: String = "birthday"
 }
 
+struct CapitalizeAction: Action {}
+
+struct CapitalizeCommand: Command {
+    typealias State = TestState
+
+    func execute(state: TestState, store: Store<TestState>) {
+        let capitalize = CapitalizeAction()
+        store.dispatch(capitalize)
+    }
+}
+
 struct TestReducer: Reducer {
     #if swift(>=3)
     func handleAction(_ action: Action, state: TestState?) -> TestState {
@@ -82,6 +93,9 @@ struct NameReducer: Reducer {
         switch action {
         case let cna as ChangeNameAction:
             return cna.newName
+        case _ as CapitalizeAction:
+            NSLog("capitalized: \(state.uppercased())")
+            return state.uppercased()
         default: break
         }
 
@@ -94,6 +108,8 @@ struct NameReducer: Reducer {
         switch action {
         case let cna as ChangeNameAction:
             return cna.newName
+        case _ as CapitalizeAction:
+            return state.uppercaseString
         default: break
         }
         
@@ -133,5 +149,12 @@ class CalibreTests: XCTestCase, Subscriber {
         XCTAssert(store.state.age == 1)
         store.dispatch(ChangeNameAction(newName: "Bob McTestinstine"))
         XCTAssert(store.state.name == "Bob McTestinstine")
+    }
+
+    func testCommand() {
+        let c = CapitalizeCommand()
+        store.dispatch(ChangeNameAction(newName: "Bob McTestinstine"))
+        store.fire(c)
+        XCTAssert(store.state.name == "BOB MCTESTINSTINE")
     }
 }
