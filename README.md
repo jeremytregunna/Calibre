@@ -173,16 +173,10 @@ CocoaPods:
 pod "Greenshire/Calibre"
 ```
 
-or...
-
-```
-pod "Greenshire/Calibre", git: 'https://github.com/Greenshire/Calibre.git', branch: 'master'
-```
-
 To use Carthage, add to your Cartfile:
 
 ```
-github "Greenshire/Calibre" "master"
+github "Greenshire/Calibre" ~> 2.0.0
 ```
 
 ## License
