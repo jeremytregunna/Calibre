@@ -14,6 +14,8 @@
 		4E030D7B1DCFC2B50065D0F9 /* PresentViewAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E030D771DCFC2B50065D0F9 /* PresentViewAction.swift */; };
 		4E030D7C1DCFC2B50065D0F9 /* PushViewAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E030D781DCFC2B50065D0F9 /* PushViewAction.swift */; };
 		4E030D7F1DCFC4C30065D0F9 /* AddSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E030D7E1DCFC4C30065D0F9 /* AddSeeds.swift */; };
+		4E030D871DD4C8120065D0F9 /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E030D861DD4C8120065D0F9 /* Bus.swift */; };
+		4E030D891DD4CB440065D0F9 /* BusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E030D881DD4CB440065D0F9 /* BusTests.swift */; };
 		4E857B321DCFB438009EAB95 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E857B311DCFB438009EAB95 /* Command.swift */; };
 		4EA238CF1D7796DC005AACF9 /* Calibre.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EA238CE1D7796DC005AACF9 /* Calibre.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4EA238D61D7796DC005AACF9 /* Calibre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA238CB1D7796DC005AACF9 /* Calibre.framework */; };
@@ -66,6 +68,8 @@
 		4E030D771DCFC2B50065D0F9 /* PresentViewAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentViewAction.swift; sourceTree = "<group>"; };
 		4E030D781DCFC2B50065D0F9 /* PushViewAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushViewAction.swift; sourceTree = "<group>"; };
 		4E030D7E1DCFC4C30065D0F9 /* AddSeeds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSeeds.swift; sourceTree = "<group>"; };
+		4E030D861DD4C8120065D0F9 /* Bus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bus.swift; sourceTree = "<group>"; };
+		4E030D881DD4CB440065D0F9 /* BusTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusTests.swift; sourceTree = "<group>"; };
 		4E857B311DCFB438009EAB95 /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		4EA238CB1D7796DC005AACF9 /* Calibre.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Calibre.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EA238CE1D7796DC005AACF9 /* Calibre.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Calibre.h; sourceTree = "<group>"; };
@@ -135,6 +139,13 @@
 			name = Navigation;
 			sourceTree = "<group>";
 		};
+		4E030D851DD4C7DD0065D0F9 /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Effects;
+			sourceTree = "<group>";
+		};
 		4EA238C11D7796DC005AACF9 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				4EA239B01D79F141005AACF9 /* Core */,
+				4E030D851DD4C7DD0065D0F9 /* Effects */,
 				4EA238CE1D7796DC005AACF9 /* Calibre.h */,
 				4EA238D01D7796DC005AACF9 /* Info.plist */,
 			);
@@ -178,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				4EA238E81D779784005AACF9 /* Action.swift */,
+				4E030D861DD4C8120065D0F9 /* Bus.swift */,
 				4E857B311DCFB438009EAB95 /* Command.swift */,
 				4EA238EE1D779945005AACF9 /* Reducer.swift */,
 				4EA238EC1D7797FB005AACF9 /* State.swift */,
@@ -192,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				4EA238DA1D7796DC005AACF9 /* CalibreTests.swift */,
+				4E030D881DD4CB440065D0F9 /* BusTests.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -439,6 +453,7 @@
 				4EA238F11D7799FD005AACF9 /* Types.swift in Sources */,
 				4E857B321DCFB438009EAB95 /* Command.swift in Sources */,
 				4EA238EF1D779945005AACF9 /* Reducer.swift in Sources */,
+				4E030D871DD4C8120065D0F9 /* Bus.swift in Sources */,
 				4EA238ED1D7797FB005AACF9 /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,6 +462,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E030D891DD4CB440065D0F9 /* BusTests.swift in Sources */,
 				4EA238DB1D7796DC005AACF9 /* CalibreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
