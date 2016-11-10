@@ -16,8 +16,11 @@ class Bus<T> {
     private let queue: dispatch_queue_t
     private let semaphore: dispatch_semaphore_t
     private let timeoutDelta: Int64
-    var stream: Array<T>
+    private var stream: Array<T>
 
+    /** Create a new bus.
+        - parameter timeout: Read timeout in seconds. Supports subsecond values. If negative, no timeout. Default value: `-1`.
+     */
     init(timeout: Double = -1) {
         queue        = dispatch_queue_create("co.greenshire.library.Calibre.queues.bus", DISPATCH_QUEUE_CONCURRENT)
         semaphore    = dispatch_semaphore_create(0)
@@ -25,6 +28,9 @@ class Bus<T> {
         stream       = []
     }
 
+    /** Send a value onto the bus.
+        - parameter value: The value to place onto the bus.
+     */
     func send(value: T) {
         dispatch_barrier_async(queue) {
             self.stream.append(value)
@@ -32,6 +38,10 @@ class Bus<T> {
         }
     }
 
+    /** Receive a value over the bus.
+        - returns: The next value waiting on the bus
+        - throws: `BusError.timeout` if your (optional) read timeout expires before a value is available.
+     */
     func receive() throws -> T {
         var result: T? = nil
         dispatch_sync(queue) {
