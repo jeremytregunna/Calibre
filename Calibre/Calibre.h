@@ -6,7 +6,12 @@
 //  Copyright © 2016 Greenshire, Inc. All rights reserved.
 //
 
+#import "TargetConditionals.h"
+#if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>
+#else
+#import <Cocoa/Cocoa.h>
+#endif
 
 //! Project version number for Calibre.
 FOUNDATION_EXPORT double CalibreVersionNumber;
