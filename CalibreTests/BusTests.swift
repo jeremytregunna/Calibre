@@ -13,7 +13,7 @@ class BusTests: XCTestCase {
     var bus: Bus<Int> = Bus(timeout: 1)
 
     func testsSendsAndReceivesValue() {
-        bus.send(1)
+        bus.send(value: 1)
         let value = try? bus.receive()
         XCTAssert(value == 1)
     }
@@ -30,8 +30,8 @@ class BusTests: XCTestCase {
     }
     
     func testSendMultipleValuesReceivesAllValues() {
-        bus.send(1)
-        bus.send(2)
+        bus.send(value: 1)
+        bus.send(value: 2)
         let first = try? bus.receive()
         XCTAssert(first == 1)
         let second = try? bus.receive()

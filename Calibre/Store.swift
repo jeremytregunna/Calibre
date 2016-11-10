@@ -11,33 +11,17 @@ import Foundation
 public class Store<State: StateType> {
     typealias SubscriptionType = Subscription<State>
 
-    #if swift(>=3)
-        open fileprivate(set) var state: State! {
-            didSet {
-                subscriptions = subscriptions.filter({ $0.subscriber != nil })
-                for sub in subscriptions {
-                    sub.subscriber?._newState(state: sub.update?(state) ?? state)
-                }
+    open fileprivate(set) var state: State! {
+        didSet {
+            subscriptions = subscriptions.filter({ $0.subscriber != nil })
+            for sub in subscriptions {
+                sub.subscriber?._newState(state: sub.update?(state) ?? state)
             }
         }
-    #else
-        public private(set) var state: State! {
-            didSet {
-                subscriptions = subscriptions.filter({ $0.subscriber != nil })
-                for sub in subscriptions {
-                    sub.subscriber?._newState(sub.update?(state) ?? state)
-                }
-            }
-        }
-    #endif
+    }
 
-    #if swift(>=3)
-        fileprivate(set) var appReducer: AnyReducer
-        fileprivate(set) var subscriptions: Array<SubscriptionType> = []
-    #else
-        private(set) var appReducer: AnyReducer
-        private(set) var subscriptions: Array<SubscriptionType> = []
-    #endif
+    fileprivate(set) var appReducer: AnyReducer
+    fileprivate(set) var subscriptions: Array<SubscriptionType> = []
 
     public init(reducer: AnyReducer, state: State?) {
         appReducer = reducer
@@ -47,10 +31,6 @@ public class Store<State: StateType> {
             dispatch(InitialAction())
         }
     }
-
-    // MARK: - Swift 3.0
-
-    #if swift(>=3)
 
     public func dispatch(_ action: Action) {
         state = appReducer._handleAction(action, state: state) as! State
@@ -90,48 +70,4 @@ public class Store<State: StateType> {
     fileprivate func isSubscribed<S: Subscriber>(_ subscriber: S) -> Bool {
         return subscriptions.contains(where: { $0.subscriber === subscriber })
     }
-    
-    #else
-
-    // MARK: - Swift 2
-    
-    public func dispatch(action: Action) {
-        state = appReducer._handleAction(action, state: state) as! State
-        if let state = state {
-            dispatch_async(dispatch_get_main_queue()) {
-                for subscription in self.subscriptions {
-                    subscription.subscriber?._newState(state)
-                }
-            }
-        }
-    }
-
-    public func fire<C: Command where C.State == State>(command: C) {
-        command.execute(state, store: self)
-    }
-    
-    public func subscribe<S: Subscriber where S.SubscriberStateType == State>(subscriber: S) {
-        subscribe(subscriber, update: nil)
-    }
-
-    public func subscribe<SelectedState, S: Subscriber where S.SubscriberStateType == SelectedState>(subscriber: S, update: (State -> SelectedState)?) {
-        guard isSubscribed(subscriber) == false else { return }
-
-        subscriptions.append(Subscription(subscriber: subscriber, update: update))
-        if let state = state {
-            subscriber._newState(update?(state) ?? state)
-        }
-    }
-
-    public func unsubscribe(subscriber: AnySubscriber) {
-        if let index = subscriptions.indexOf({ return $0.subscriber === subscriber }) {
-            subscriptions.removeAtIndex(index)
-        }
-    }
-
-    private func isSubscribed<S: Subscriber>(subscriber: S) -> Bool {
-        return subscriptions.contains({ $0.subscriber === subscriber })
-    }
-
-    #endif
 }
