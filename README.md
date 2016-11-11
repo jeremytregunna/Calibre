@@ -1,5 +1,7 @@
 # Calibre
 
+![Build status](https://circleci.com/gh/Greenshire/Calibre.svg?style=shield&circle-token=4787eb6a56cb69e12378fd73fe31bb622028aa93)
+
 Calibre is a Redux-ish development architecture for building reactive applications.
 
 Calibre encourages you to have one single source of truth, we call that your "app state". It gives you the tools to affect change to your app state, we call those "actions". Actions are sent to your business/application logic or other assorted middlewares which are isolated from the rest of your application, ensuring that it's easy to find all the rules that make your app tick, we call these "reducers". Finally, after your app state has been updated, it's sent to all subscribers, like your views so they can update what they display. Using these tools lets you keep data flowing in one direction, which makes your code easier to understand.
