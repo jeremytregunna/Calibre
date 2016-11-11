@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4EA238CA1D7796DC005AACF9"
+               BlueprintIdentifier = "4E03613C1DD61DC100ADF119"
                BuildableName = "Calibre.framework"
-               BlueprintName = "Calibre"
+               BlueprintName = "Calibre-macOS"
                ReferencedContainer = "container:Calibre.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,24 +32,19 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4EA238D41D7796DC005AACF9"
-               BuildableName = "CalibreTests.xctest"
-               BlueprintName = "CalibreTests"
+               BlueprintIdentifier = "4E0361731DD6235900ADF119"
+               BuildableName = "CalibreTests-macOS.xctest"
+               BlueprintName = "CalibreTests-macOS"
                ReferencedContainer = "container:Calibre.xcodeproj">
             </BuildableReference>
-            <SkippedTests>
-               <Test
-                  Identifier = "CommandChainTests">
-               </Test>
-            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4EA238CA1D7796DC005AACF9"
+            BlueprintIdentifier = "4E03613C1DD61DC100ADF119"
             BuildableName = "Calibre.framework"
-            BlueprintName = "Calibre"
+            BlueprintName = "Calibre-macOS"
             ReferencedContainer = "container:Calibre.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -69,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4EA238CA1D7796DC005AACF9"
+            BlueprintIdentifier = "4E03613C1DD61DC100ADF119"
             BuildableName = "Calibre.framework"
-            BlueprintName = "Calibre"
+            BlueprintName = "Calibre-macOS"
             ReferencedContainer = "container:Calibre.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -87,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4EA238CA1D7796DC005AACF9"
+            BlueprintIdentifier = "4E03613C1DD61DC100ADF119"
             BuildableName = "Calibre.framework"
-            BlueprintName = "Calibre"
+            BlueprintName = "Calibre-macOS"
             ReferencedContainer = "container:Calibre.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
