@@ -3,15 +3,13 @@ machine:
     version: 8.1
 test:
   override:
-    - xctool
-      -reporter pretty
-      -reporter junit:$CIRCLE_TEST_REPORTS/xcode/results.xml
-      -reporter plain:$CIRCLE_ARTIFACTS/xctool.log
+    - xcodebuild build test
       CODE_SIGNING_REQUIRED=NO
-      CODE_SIGN_IDENTITY=
+      CODE_SIGN_IDENTITY=NO
       PROVISIONING_PROFILE=
-      -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest'
-      -sdk iphonesimulator
       -project Calibre.xcodeproj
       -scheme "Calibre"
-      build test
+      -configuration Release
+      -sdk iphonesimulator
+      -destination "platform=iOS Simulator,name=iPhone 6s" | xcpretty -c -r junit -o $CIRCLE_TEST_REPORTS/test-report-ios.xml
+
