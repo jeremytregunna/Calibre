@@ -40,54 +40,30 @@ struct CapitalizeCommand: Command {
 }
 
 struct TestReducer: Reducer {
-    #if swift(>=3)
-    func handleAction(_ action: Action, state: TestState?) -> TestState {
-        return TestState(
-            name: NameReducer().handleAction(action, state: state?.name),
-            age: AgeReducer().handleAction(action, state: state?.age)
-        )
-    }
-    #else
     func handleAction(action: Action, state: TestState?) -> TestState {
         return TestState(
-            name: NameReducer().handleAction(action, state: state?.name),
-            age: AgeReducer().handleAction(action, state: state?.age)
+            name: NameReducer().handleAction(action: action, state: state?.name),
+            age: AgeReducer().handleAction(action: action, state: state?.age)
         )
     }
-    #endif
 }
 
 struct AgeReducer: Reducer {
-    #if swift(>=3)
-    func handleAction(_ action: Action, state: Int?) -> Int {
-        guard let state = state else { return 0 }
-
-        switch action {
-        case _ as BirthdayAction:
-            return state + 1
-        default: break
-        }
-
-        return state
-    }
-    #else
     func handleAction(action: Action, state: Int?) -> Int {
         guard let state = state else { return 0 }
-        
+
         switch action {
         case _ as BirthdayAction:
             return state + 1
         default: break
         }
-        
+
         return state
     }
-    #endif
 }
 
 struct NameReducer: Reducer {
-    #if swift(>=3)
-    func handleAction(_ action: Action, state: String?) -> String {
+    func handleAction(action: Action, state: String?) -> String {
         guard let state = state else { return "unknown" }
 
         switch action {
@@ -101,21 +77,6 @@ struct NameReducer: Reducer {
 
         return state
     }
-    #else
-    func handleAction(action: Action, state: String?) -> String {
-        guard let state = state else { return "unknown" }
-        
-        switch action {
-        case let cna as ChangeNameAction:
-            return cna.newName
-        case _ as CapitalizeAction:
-            return state.uppercaseString
-        default: break
-        }
-        
-        return state
-    }
-    #endif
 }
 
 class CalibreTests: XCTestCase, Subscriber {

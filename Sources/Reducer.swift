@@ -8,20 +8,18 @@
 
 import Foundation
 
-typealias ReducerFunc = (_ action: Action, _ state: StateType?) -> StateType
-
 public protocol AnyReducer {
-    func _handleAction(_ action: Action, state: StateType?) -> StateType
+    func _handleAction(action: Action, state: StateType?) -> StateType
 }
 
 public protocol Reducer: AnyReducer {
     associatedtype ReducerStateType
 
-    func handleAction(_ action: Action, state: ReducerStateType?) -> ReducerStateType
+    func handleAction(action: Action, state: ReducerStateType?) -> ReducerStateType
 }
 
 extension Reducer {
-    public func _handleAction(_ action: Action, state: StateType?) -> StateType {
+    public func _handleAction(action: Action, state: StateType?) -> StateType {
         return withTypes(action, state: state, function: handleAction)
     }
 }
