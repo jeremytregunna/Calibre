@@ -1,7 +1,7 @@
 # Calibre
 
 ![Build status](https://circleci.com/gh/Greenshire/Calibre.svg?style=shield&circle-token=4787eb6a56cb69e12378fd73fe31bb622028aa93)
-(https://img.shields.io/badge/platform-ios%20%7C%20osx%20%7C%20tvos%20%7C%20watchos-lightgrey.svg?style=flat-square)]
+[![Platform support](https://img.shields.io/badge/platform-ios%20%7C%20osx%20%7C%20tvos%20%7C%20watchos-lightgrey.svg?style=flat-square)]
 
 **Requires Swift 3.0**
 
