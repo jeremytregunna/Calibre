@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target    = '10.0'
   s.watchos.deployment_target = '3.0'
   s.name                      = 'Calibre'
-  s.version                   = '2.0.0'
+  s.version                   = '3.0.0'
   s.license                   = { :type => 'MIT', :file => 'LICENSE' }
   s.summary                   = 'Reactive programming library inspired by Redux'
   s.homepage                  = 'https://github.com/Greenshire/Calibre'
