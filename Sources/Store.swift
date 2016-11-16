@@ -20,10 +20,6 @@ public final class Store<State: StateType> {
         }
     }
 
-    lazy var stories: Stories<State> = {
-        return Stories<State>(store: self)
-    }()
-
     fileprivate(set) var appReducer: AnyReducer
     fileprivate(set) var subscriptions: Array<SubscriptionType> = []
 
@@ -36,11 +32,13 @@ public final class Store<State: StateType> {
         }
     }
 
+    public func dispatch(creator: ActionCreator) {
+        let action = creator.execute()
+        dispatch(action)
+    }
+
     public func dispatch(_ action: Action) {
         state = appReducer._handleAction(action: action, state: state) as! State
-        if (action as? InitialAction) == nil {
-            stories.handleAction(action: action, state: state)
-        }
         if let state = state {
             DispatchQueue.main.async {
                 for subscription in self.subscriptions {
@@ -48,11 +46,6 @@ public final class Store<State: StateType> {
                 }
             }
         }
-    }
-
-    @available(*, deprecated: 3.0, introduced: 2.0, message: "Use stories instead for async or side effecting actions.")
-    public func fire<C: Command>(_ command: C) where C.State == State {
-        command.execute(state: state, store: self)
     }
 
     public func subscribe<S: Subscriber>(_ subscriber: S) where S.SubscriberStateType == State {

@@ -19,7 +19,6 @@
 		4E0361411DD61DC100ADF119 /* Calibre-macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E03613F1DD61DC100ADF119 /* Calibre-macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E0361451DD61E2B00ADF119 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238E81D779784005AACF9 /* Action.swift */; };
 		4E0361461DD61E2B00ADF119 /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E030D861DD4C8120065D0F9 /* Bus.swift */; };
-		4E0361471DD61E2B00ADF119 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E857B311DCFB438009EAB95 /* Command.swift */; };
 		4E0361481DD61E2B00ADF119 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238EE1D779945005AACF9 /* Reducer.swift */; };
 		4E0361491DD61E2B00ADF119 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238EC1D7797FB005AACF9 /* State.swift */; };
 		4E03614A1DD61E2B00ADF119 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238F21D779AE2005AACF9 /* Store.swift */; };
@@ -28,7 +27,6 @@
 		4E0361561DD61E4C00ADF119 /* Calibre-tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E0361541DD61E4C00ADF119 /* Calibre-tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E03615A1DD61F6300ADF119 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238E81D779784005AACF9 /* Action.swift */; };
 		4E03615B1DD61F6300ADF119 /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E030D861DD4C8120065D0F9 /* Bus.swift */; };
-		4E03615C1DD61F6300ADF119 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E857B311DCFB438009EAB95 /* Command.swift */; };
 		4E03615D1DD61F6300ADF119 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238EE1D779945005AACF9 /* Reducer.swift */; };
 		4E03615E1DD61F6300ADF119 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238EC1D7797FB005AACF9 /* State.swift */; };
 		4E03615F1DD61F6300ADF119 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238F21D779AE2005AACF9 /* Store.swift */; };
@@ -45,16 +43,11 @@
 		4E0361981DD6254A00ADF119 /* CalibreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0361811DD623A800ADF119 /* CalibreTests.swift */; };
 		4E0361991DD6258600ADF119 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238E81D779784005AACF9 /* Action.swift */; };
 		4E03619A1DD6258600ADF119 /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E030D861DD4C8120065D0F9 /* Bus.swift */; };
-		4E03619B1DD6258600ADF119 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E857B311DCFB438009EAB95 /* Command.swift */; };
 		4E03619C1DD6258600ADF119 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238EE1D779945005AACF9 /* Reducer.swift */; };
 		4E03619D1DD6258600ADF119 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238EC1D7797FB005AACF9 /* State.swift */; };
 		4E03619E1DD6258600ADF119 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238F21D779AE2005AACF9 /* Store.swift */; };
 		4E03619F1DD6258600ADF119 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238EA1D7797DE005AACF9 /* Subscription.swift */; };
 		4E0361A01DD6258600ADF119 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238F01D7799FD005AACF9 /* Types.swift */; };
-		4E0361A21DD6324F00ADF119 /* Effects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0361A11DD6324F00ADF119 /* Effects.swift */; };
-		4E0361A41DD63FB400ADF119 /* Effects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0361A11DD6324F00ADF119 /* Effects.swift */; };
-		4E0361A61DD63FB700ADF119 /* Effects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0361A11DD6324F00ADF119 /* Effects.swift */; };
-		4E857B321DCFB438009EAB95 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E857B311DCFB438009EAB95 /* Command.swift */; };
 		4EA238D61D7796DC005AACF9 /* Calibre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA238CB1D7796DC005AACF9 /* Calibre.framework */; };
 		4EA238E91D779785005AACF9 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238E81D779784005AACF9 /* Action.swift */; };
 		4EA238EB1D7797DE005AACF9 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238EA1D7797DE005AACF9 /* Subscription.swift */; };
@@ -77,22 +70,6 @@
 		4ED70E041D7F669F00A4DFBB /* Calibre_Example.ProductsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ED70E021D7F669F00A4DFBB /* Calibre_Example.ProductsListViewController.xib */; };
 		4ED70E081D7F68C000A4DFBB /* ProductsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED70E061D7F68C000A4DFBB /* ProductsListCell.swift */; };
 		4ED70E091D7F68C000A4DFBB /* Calibre_Example.ProductsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ED70E071D7F68C000A4DFBB /* Calibre_Example.ProductsListCell.xib */; };
-		4EEA179C1DD6B0B4006AC366 /* EffectsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEA179B1DD6B0B4006AC366 /* EffectsManager.swift */; };
-		4EEA179E1DD6B615006AC366 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEA179D1DD6B615006AC366 /* Story.swift */; };
-		4EEA17A01DD76B69006AC366 /* Stories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEA179F1DD76B69006AC366 /* Stories.swift */; };
-		4EEA17A41DD76B6F006AC366 /* Effects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0361A11DD6324F00ADF119 /* Effects.swift */; };
-		4EEA17A51DD76B6F006AC366 /* EffectsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEA179B1DD6B0B4006AC366 /* EffectsManager.swift */; };
-		4EEA17A61DD76B6F006AC366 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEA179D1DD6B615006AC366 /* Story.swift */; };
-		4EEA17A71DD76B6F006AC366 /* Stories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEA179F1DD76B69006AC366 /* Stories.swift */; };
-		4EEA17A81DD76B70006AC366 /* EffectsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEA179B1DD6B0B4006AC366 /* EffectsManager.swift */; };
-		4EEA17A91DD76B70006AC366 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEA179D1DD6B615006AC366 /* Story.swift */; };
-		4EEA17AA1DD76B70006AC366 /* Stories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEA179F1DD76B69006AC366 /* Stories.swift */; };
-		4EEA17AB1DD76B71006AC366 /* EffectsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEA179B1DD6B0B4006AC366 /* EffectsManager.swift */; };
-		4EEA17AC1DD76B71006AC366 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEA179D1DD6B615006AC366 /* Story.swift */; };
-		4EEA17AD1DD76B71006AC366 /* Stories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEA179F1DD76B69006AC366 /* Stories.swift */; };
-		4EEA17AF1DD7783F006AC366 /* StoriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEA17AE1DD7783F006AC366 /* StoriesTests.swift */; };
-		4EEA17D81DD8F025006AC366 /* StoriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEA17AE1DD7783F006AC366 /* StoriesTests.swift */; };
-		4EEA17D91DD8F026006AC366 /* StoriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEA17AE1DD7783F006AC366 /* StoriesTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,8 +129,6 @@
 		4E0361811DD623A800ADF119 /* CalibreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalibreTests.swift; sourceTree = "<group>"; };
 		4E03618C1DD623FD00ADF119 /* CalibreTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CalibreTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E0361901DD623FD00ADF119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4E0361A11DD6324F00ADF119 /* Effects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Effects.swift; sourceTree = "<group>"; };
-		4E857B311DCFB438009EAB95 /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		4EA238CB1D7796DC005AACF9 /* Calibre.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Calibre.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EA238D51D7796DC005AACF9 /* CalibreTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CalibreTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EA238DC1D7796DC005AACF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -179,10 +154,6 @@
 		4ED70E021D7F669F00A4DFBB /* Calibre_Example.ProductsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Calibre_Example.ProductsListViewController.xib; sourceTree = "<group>"; };
 		4ED70E061D7F68C000A4DFBB /* ProductsListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsListCell.swift; sourceTree = "<group>"; };
 		4ED70E071D7F68C000A4DFBB /* Calibre_Example.ProductsListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Calibre_Example.ProductsListCell.xib; sourceTree = "<group>"; };
-		4EEA179B1DD6B0B4006AC366 /* EffectsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EffectsManager.swift; sourceTree = "<group>"; };
-		4EEA179D1DD6B615006AC366 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
-		4EEA179F1DD76B69006AC366 /* Stories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stories.swift; sourceTree = "<group>"; };
-		4EEA17AE1DD7783F006AC366 /* StoriesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,17 +231,6 @@
 			name = Navigation;
 			sourceTree = "<group>";
 		};
-		4E030D851DD4C7DD0065D0F9 /* Effects */ = {
-			isa = PBXGroup;
-			children = (
-				4E0361A11DD6324F00ADF119 /* Effects.swift */,
-				4EEA179B1DD6B0B4006AC366 /* EffectsManager.swift */,
-				4EEA179D1DD6B615006AC366 /* Story.swift */,
-				4EEA179F1DD76B69006AC366 /* Stories.swift */,
-			);
-			name = Effects;
-			sourceTree = "<group>";
-		};
 		4E0361331DD61D6600ADF119 /* Calibre-iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -334,7 +294,6 @@
 			children = (
 				4E0361801DD623A800ADF119 /* BusTests.swift */,
 				4E0361811DD623A800ADF119 /* CalibreTests.swift */,
-				4EEA17AE1DD7783F006AC366 /* StoriesTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -377,7 +336,6 @@
 			isa = PBXGroup;
 			children = (
 				4EA239B01D79F141005AACF9 /* Core */,
-				4E030D851DD4C7DD0065D0F9 /* Effects */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -396,7 +354,6 @@
 			children = (
 				4EA238E81D779784005AACF9 /* Action.swift */,
 				4E030D861DD4C8120065D0F9 /* Bus.swift */,
-				4E857B311DCFB438009EAB95 /* Command.swift */,
 				4EA238EE1D779945005AACF9 /* Reducer.swift */,
 				4EA238EC1D7797FB005AACF9 /* State.swift */,
 				4EA238F21D779AE2005AACF9 /* Store.swift */,
@@ -824,16 +781,11 @@
 			files = (
 				4E0361461DD61E2B00ADF119 /* Bus.swift in Sources */,
 				4E0361451DD61E2B00ADF119 /* Action.swift in Sources */,
-				4EEA17A51DD76B6F006AC366 /* EffectsManager.swift in Sources */,
 				4E0361481DD61E2B00ADF119 /* Reducer.swift in Sources */,
 				4E03614C1DD61E2B00ADF119 /* Types.swift in Sources */,
 				4E03614A1DD61E2B00ADF119 /* Store.swift in Sources */,
 				4E03614B1DD61E2B00ADF119 /* Subscription.swift in Sources */,
 				4E0361491DD61E2B00ADF119 /* State.swift in Sources */,
-				4EEA17A41DD76B6F006AC366 /* Effects.swift in Sources */,
-				4EEA17A71DD76B6F006AC366 /* Stories.swift in Sources */,
-				4E0361471DD61E2B00ADF119 /* Command.swift in Sources */,
-				4EEA17A61DD76B6F006AC366 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -843,16 +795,11 @@
 			files = (
 				4E03615B1DD61F6300ADF119 /* Bus.swift in Sources */,
 				4E03615A1DD61F6300ADF119 /* Action.swift in Sources */,
-				4EEA17A81DD76B70006AC366 /* EffectsManager.swift in Sources */,
 				4E03615D1DD61F6300ADF119 /* Reducer.swift in Sources */,
 				4E0361611DD61F6300ADF119 /* Types.swift in Sources */,
 				4E03615F1DD61F6300ADF119 /* Store.swift in Sources */,
 				4E0361601DD61F6300ADF119 /* Subscription.swift in Sources */,
 				4E03615E1DD61F6300ADF119 /* State.swift in Sources */,
-				4E0361A41DD63FB400ADF119 /* Effects.swift in Sources */,
-				4EEA17AA1DD76B70006AC366 /* Stories.swift in Sources */,
-				4E03615C1DD61F6300ADF119 /* Command.swift in Sources */,
-				4EEA17A91DD76B70006AC366 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -862,16 +809,11 @@
 			files = (
 				4E03619A1DD6258600ADF119 /* Bus.swift in Sources */,
 				4E0361991DD6258600ADF119 /* Action.swift in Sources */,
-				4EEA17AB1DD76B71006AC366 /* EffectsManager.swift in Sources */,
 				4E03619C1DD6258600ADF119 /* Reducer.swift in Sources */,
 				4E0361A01DD6258600ADF119 /* Types.swift in Sources */,
 				4E03619E1DD6258600ADF119 /* Store.swift in Sources */,
 				4E03619F1DD6258600ADF119 /* Subscription.swift in Sources */,
 				4E03619D1DD6258600ADF119 /* State.swift in Sources */,
-				4E0361A61DD63FB700ADF119 /* Effects.swift in Sources */,
-				4EEA17AD1DD76B71006AC366 /* Stories.swift in Sources */,
-				4E03619B1DD6258600ADF119 /* Command.swift in Sources */,
-				4EEA17AC1DD76B71006AC366 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -880,7 +822,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E0361871DD623B500ADF119 /* CalibreTests.swift in Sources */,
-				4EEA17D81DD8F025006AC366 /* StoriesTests.swift in Sources */,
 				4E0361861DD623B500ADF119 /* BusTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -890,7 +831,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E0361981DD6254A00ADF119 /* CalibreTests.swift in Sources */,
-				4EEA17D91DD8F026006AC366 /* StoriesTests.swift in Sources */,
 				4E0361971DD6254A00ADF119 /* BusTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -900,16 +840,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EA238F31D779AE2005AACF9 /* Store.swift in Sources */,
-				4EEA179E1DD6B615006AC366 /* Story.swift in Sources */,
 				4EA238EB1D7797DE005AACF9 /* Subscription.swift in Sources */,
-				4EEA179C1DD6B0B4006AC366 /* EffectsManager.swift in Sources */,
 				4EA238E91D779785005AACF9 /* Action.swift in Sources */,
 				4EA238F11D7799FD005AACF9 /* Types.swift in Sources */,
-				4E857B321DCFB438009EAB95 /* Command.swift in Sources */,
 				4EA238EF1D779945005AACF9 /* Reducer.swift in Sources */,
 				4E030D871DD4C8120065D0F9 /* Bus.swift in Sources */,
-				4EEA17A01DD76B69006AC366 /* Stories.swift in Sources */,
-				4E0361A21DD6324F00ADF119 /* Effects.swift in Sources */,
 				4EA238ED1D7797FB005AACF9 /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -919,7 +854,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E0361851DD623B400ADF119 /* CalibreTests.swift in Sources */,
-				4EEA17AF1DD7783F006AC366 /* StoriesTests.swift in Sources */,
 				4E0361841DD623B400ADF119 /* BusTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

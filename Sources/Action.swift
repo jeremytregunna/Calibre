@@ -10,4 +10,8 @@ import Foundation
 
 public protocol Action {}
 
+public protocol ActionCreator {
+    func execute() -> Action
+}
+
 public struct InitialAction: Action {}

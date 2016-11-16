@@ -30,12 +30,9 @@ struct BirthdayAction: Action {
 
 struct CapitalizeAction: Action {}
 
-struct CapitalizeCommand: Command {
-    typealias State = TestState
-
-    func execute(state: TestState, store: Store<TestState>) {
-        let capitalize = CapitalizeAction()
-        store.dispatch(capitalize)
+struct CapitalizeCreator: ActionCreator {
+    func execute() -> Action {
+        return CapitalizeAction()
     }
 }
 
@@ -112,10 +109,10 @@ class CalibreTests: XCTestCase, Subscriber {
         XCTAssert(store.state.name == "Bob McTestinstine")
     }
 
-    func testCommand() {
-        let c = CapitalizeCommand()
+    func testActionCreator() {
+        let c = CapitalizeCreator()
         store.dispatch(ChangeNameAction(newName: "Bob McTestinstine"))
-        store.fire(c)
+        store.dispatch(creator: c)
         XCTAssert(store.state.name == "BOB MCTESTINSTINE")
     }
 }
