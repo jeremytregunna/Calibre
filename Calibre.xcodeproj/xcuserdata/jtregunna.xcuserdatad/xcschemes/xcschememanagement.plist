@@ -9,14 +9,64 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>Calibre.xcscheme_^#shared#^_</key>
+		<key>Calibre-iOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Calibre-macOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Calibre-tvOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Calibre-watchOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>CalibreTests-macOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>CalibreTests-tvOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>4E03613C1DD61DC100ADF119</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4E0361511DD61E4C00ADF119</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4E0361671DD6229500ADF119</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4E0361731DD6235900ADF119</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4E03618B1DD623FD00ADF119</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4EA238CA1D7796DC005AACF9</key>
 		<dict>
 			<key>primary</key>

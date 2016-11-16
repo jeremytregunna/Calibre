@@ -14,10 +14,41 @@
 		4E030D7B1DCFC2B50065D0F9 /* PresentViewAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E030D771DCFC2B50065D0F9 /* PresentViewAction.swift */; };
 		4E030D7C1DCFC2B50065D0F9 /* PushViewAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E030D781DCFC2B50065D0F9 /* PushViewAction.swift */; };
 		4E030D7F1DCFC4C30065D0F9 /* AddSeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E030D7E1DCFC4C30065D0F9 /* AddSeeds.swift */; };
-		4E857B321DCFB438009EAB95 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E857B311DCFB438009EAB95 /* Command.swift */; };
-		4EA238CF1D7796DC005AACF9 /* Calibre.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EA238CE1D7796DC005AACF9 /* Calibre.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E030D871DD4C8120065D0F9 /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E030D861DD4C8120065D0F9 /* Bus.swift */; };
+		4E0361361DD61D8600ADF119 /* Calibre_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E0361341DD61D8600ADF119 /* Calibre_iOS.h */; };
+		4E0361411DD61DC100ADF119 /* Calibre-macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E03613F1DD61DC100ADF119 /* Calibre-macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E0361451DD61E2B00ADF119 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238E81D779784005AACF9 /* Action.swift */; };
+		4E0361461DD61E2B00ADF119 /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E030D861DD4C8120065D0F9 /* Bus.swift */; };
+		4E0361481DD61E2B00ADF119 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238EE1D779945005AACF9 /* Reducer.swift */; };
+		4E0361491DD61E2B00ADF119 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238EC1D7797FB005AACF9 /* State.swift */; };
+		4E03614A1DD61E2B00ADF119 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238F21D779AE2005AACF9 /* Store.swift */; };
+		4E03614B1DD61E2B00ADF119 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238EA1D7797DE005AACF9 /* Subscription.swift */; };
+		4E03614C1DD61E2B00ADF119 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238F01D7799FD005AACF9 /* Types.swift */; };
+		4E0361561DD61E4C00ADF119 /* Calibre-tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E0361541DD61E4C00ADF119 /* Calibre-tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E03615A1DD61F6300ADF119 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238E81D779784005AACF9 /* Action.swift */; };
+		4E03615B1DD61F6300ADF119 /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E030D861DD4C8120065D0F9 /* Bus.swift */; };
+		4E03615D1DD61F6300ADF119 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238EE1D779945005AACF9 /* Reducer.swift */; };
+		4E03615E1DD61F6300ADF119 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238EC1D7797FB005AACF9 /* State.swift */; };
+		4E03615F1DD61F6300ADF119 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238F21D779AE2005AACF9 /* Store.swift */; };
+		4E0361601DD61F6300ADF119 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238EA1D7797DE005AACF9 /* Subscription.swift */; };
+		4E0361611DD61F6300ADF119 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238F01D7799FD005AACF9 /* Types.swift */; };
+		4E03616C1DD6229500ADF119 /* Calibre-watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E03616A1DD6229500ADF119 /* Calibre-watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E0361791DD6235900ADF119 /* Calibre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E03613D1DD61DC100ADF119 /* Calibre.framework */; };
+		4E0361841DD623B400ADF119 /* BusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0361801DD623A800ADF119 /* BusTests.swift */; };
+		4E0361851DD623B400ADF119 /* CalibreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0361811DD623A800ADF119 /* CalibreTests.swift */; };
+		4E0361861DD623B500ADF119 /* BusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0361801DD623A800ADF119 /* BusTests.swift */; };
+		4E0361871DD623B500ADF119 /* CalibreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0361811DD623A800ADF119 /* CalibreTests.swift */; };
+		4E0361911DD623FD00ADF119 /* Calibre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0361521DD61E4C00ADF119 /* Calibre.framework */; };
+		4E0361971DD6254A00ADF119 /* BusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0361801DD623A800ADF119 /* BusTests.swift */; };
+		4E0361981DD6254A00ADF119 /* CalibreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0361811DD623A800ADF119 /* CalibreTests.swift */; };
+		4E0361991DD6258600ADF119 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238E81D779784005AACF9 /* Action.swift */; };
+		4E03619A1DD6258600ADF119 /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E030D861DD4C8120065D0F9 /* Bus.swift */; };
+		4E03619C1DD6258600ADF119 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238EE1D779945005AACF9 /* Reducer.swift */; };
+		4E03619D1DD6258600ADF119 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238EC1D7797FB005AACF9 /* State.swift */; };
+		4E03619E1DD6258600ADF119 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238F21D779AE2005AACF9 /* Store.swift */; };
+		4E03619F1DD6258600ADF119 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238EA1D7797DE005AACF9 /* Subscription.swift */; };
+		4E0361A01DD6258600ADF119 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238F01D7799FD005AACF9 /* Types.swift */; };
 		4EA238D61D7796DC005AACF9 /* Calibre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA238CB1D7796DC005AACF9 /* Calibre.framework */; };
-		4EA238DB1D7796DC005AACF9 /* CalibreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238DA1D7796DC005AACF9 /* CalibreTests.swift */; };
 		4EA238E91D779785005AACF9 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238E81D779784005AACF9 /* Action.swift */; };
 		4EA238EB1D7797DE005AACF9 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238EA1D7797DE005AACF9 /* Subscription.swift */; };
 		4EA238ED1D7797FB005AACF9 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA238EC1D7797FB005AACF9 /* State.swift */; };
@@ -42,6 +73,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4E03617A1DD6235900ADF119 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EA238C21D7796DC005AACF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E03613C1DD61DC100ADF119;
+			remoteInfo = "Calibre-macOS";
+		};
+		4E0361921DD623FD00ADF119 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EA238C21D7796DC005AACF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E0361511DD61E4C00ADF119;
+			remoteInfo = "Calibre-tvOS";
+		};
 		4EA238D71D7796DC005AACF9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4EA238C21D7796DC005AACF9 /* Project object */;
@@ -66,12 +111,26 @@
 		4E030D771DCFC2B50065D0F9 /* PresentViewAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentViewAction.swift; sourceTree = "<group>"; };
 		4E030D781DCFC2B50065D0F9 /* PushViewAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushViewAction.swift; sourceTree = "<group>"; };
 		4E030D7E1DCFC4C30065D0F9 /* AddSeeds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSeeds.swift; sourceTree = "<group>"; };
-		4E857B311DCFB438009EAB95 /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		4E030D861DD4C8120065D0F9 /* Bus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bus.swift; sourceTree = "<group>"; };
+		4E0361341DD61D8600ADF119 /* Calibre_iOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calibre_iOS.h; sourceTree = "<group>"; };
+		4E0361351DD61D8600ADF119 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E03613D1DD61DC100ADF119 /* Calibre.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Calibre.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E03613F1DD61DC100ADF119 /* Calibre-macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Calibre-macOS.h"; sourceTree = "<group>"; };
+		4E0361401DD61DC100ADF119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E0361521DD61E4C00ADF119 /* Calibre.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Calibre.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E0361541DD61E4C00ADF119 /* Calibre-tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Calibre-tvOS.h"; sourceTree = "<group>"; };
+		4E0361551DD61E4C00ADF119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E0361681DD6229500ADF119 /* Calibre.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Calibre.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E03616A1DD6229500ADF119 /* Calibre-watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Calibre-watchOS.h"; sourceTree = "<group>"; };
+		4E03616B1DD6229500ADF119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E0361741DD6235900ADF119 /* CalibreTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CalibreTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E0361781DD6235900ADF119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E0361801DD623A800ADF119 /* BusTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusTests.swift; sourceTree = "<group>"; };
+		4E0361811DD623A800ADF119 /* CalibreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalibreTests.swift; sourceTree = "<group>"; };
+		4E03618C1DD623FD00ADF119 /* CalibreTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CalibreTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E0361901DD623FD00ADF119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EA238CB1D7796DC005AACF9 /* Calibre.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Calibre.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4EA238CE1D7796DC005AACF9 /* Calibre.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Calibre.h; sourceTree = "<group>"; };
-		4EA238D01D7796DC005AACF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4EA238D51D7796DC005AACF9 /* CalibreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalibreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4EA238DA1D7796DC005AACF9 /* CalibreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibreTests.swift; sourceTree = "<group>"; };
+		4EA238D51D7796DC005AACF9 /* CalibreTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CalibreTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EA238DC1D7796DC005AACF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EA238E81D779784005AACF9 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		4EA238EA1D7797DE005AACF9 /* Subscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
@@ -98,6 +157,43 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4E0361391DD61DC100ADF119 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E03614E1DD61E4C00ADF119 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E0361641DD6229500ADF119 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E0361711DD6235900ADF119 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E0361791DD6235900ADF119 /* Calibre.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E0361891DD623FD00ADF119 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E0361911DD623FD00ADF119 /* Calibre.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4EA238C71D7796DC005AACF9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -135,11 +231,87 @@
 			name = Navigation;
 			sourceTree = "<group>";
 		};
+		4E0361331DD61D6600ADF119 /* Calibre-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4E0361341DD61D8600ADF119 /* Calibre_iOS.h */,
+				4E0361351DD61D8600ADF119 /* Info.plist */,
+			);
+			path = "Calibre-iOS";
+			sourceTree = "<group>";
+		};
+		4E03613E1DD61DC100ADF119 /* Calibre-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				4E03613F1DD61DC100ADF119 /* Calibre-macOS.h */,
+				4E0361401DD61DC100ADF119 /* Info.plist */,
+			);
+			path = "Calibre-macOS";
+			sourceTree = "<group>";
+		};
+		4E0361531DD61E4C00ADF119 /* Calibre-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				4E0361541DD61E4C00ADF119 /* Calibre-tvOS.h */,
+				4E0361551DD61E4C00ADF119 /* Info.plist */,
+			);
+			path = "Calibre-tvOS";
+			sourceTree = "<group>";
+		};
+		4E0361621DD6216700ADF119 /* Platforms */ = {
+			isa = PBXGroup;
+			children = (
+				4E0361331DD61D6600ADF119 /* Calibre-iOS */,
+				4E03613E1DD61DC100ADF119 /* Calibre-macOS */,
+				4E0361531DD61E4C00ADF119 /* Calibre-tvOS */,
+				4E0361691DD6229500ADF119 /* Calibre-watchOS */,
+				4EA238D91D7796DC005AACF9 /* CalibreTests-iOS */,
+				4E0361751DD6235900ADF119 /* CalibreTests-macOS */,
+				4E03618D1DD623FD00ADF119 /* CalibreTests-tvOS */,
+			);
+			name = Platforms;
+			sourceTree = "<group>";
+		};
+		4E0361691DD6229500ADF119 /* Calibre-watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				4E03616A1DD6229500ADF119 /* Calibre-watchOS.h */,
+				4E03616B1DD6229500ADF119 /* Info.plist */,
+			);
+			path = "Calibre-watchOS";
+			sourceTree = "<group>";
+		};
+		4E0361751DD6235900ADF119 /* CalibreTests-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				4E0361781DD6235900ADF119 /* Info.plist */,
+			);
+			path = "CalibreTests-macOS";
+			sourceTree = "<group>";
+		};
+		4E03617F1DD6236400ADF119 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4E0361801DD623A800ADF119 /* BusTests.swift */,
+				4E0361811DD623A800ADF119 /* CalibreTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		4E03618D1DD623FD00ADF119 /* CalibreTests-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				4E0361901DD623FD00ADF119 /* Info.plist */,
+			);
+			path = "CalibreTests-tvOS";
+			sourceTree = "<group>";
+		};
 		4EA238C11D7796DC005AACF9 = {
 			isa = PBXGroup;
 			children = (
-				4EA238CD1D7796DC005AACF9 /* Calibre */,
-				4EA238D91D7796DC005AACF9 /* CalibreTests */,
+				4E0361621DD6216700ADF119 /* Platforms */,
+				4EA238CD1D7796DC005AACF9 /* Sources */,
+				4E03617F1DD6236400ADF119 /* Tests */,
 				4ED70DD51D7F4D3A00A4DFBB /* Calibre Example */,
 				4EA238CC1D7796DC005AACF9 /* Products */,
 			);
@@ -149,28 +321,31 @@
 			isa = PBXGroup;
 			children = (
 				4EA238CB1D7796DC005AACF9 /* Calibre.framework */,
-				4EA238D51D7796DC005AACF9 /* CalibreTests.xctest */,
+				4EA238D51D7796DC005AACF9 /* CalibreTests-iOS.xctest */,
 				4ED70DD41D7F4D3A00A4DFBB /* Calibre Example.app */,
+				4E03613D1DD61DC100ADF119 /* Calibre.framework */,
+				4E0361521DD61E4C00ADF119 /* Calibre.framework */,
+				4E0361681DD6229500ADF119 /* Calibre.framework */,
+				4E0361741DD6235900ADF119 /* CalibreTests-macOS.xctest */,
+				4E03618C1DD623FD00ADF119 /* CalibreTests-tvOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4EA238CD1D7796DC005AACF9 /* Calibre */ = {
+		4EA238CD1D7796DC005AACF9 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				4EA239B01D79F141005AACF9 /* Core */,
-				4EA238CE1D7796DC005AACF9 /* Calibre.h */,
-				4EA238D01D7796DC005AACF9 /* Info.plist */,
 			);
-			path = Calibre;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		4EA238D91D7796DC005AACF9 /* CalibreTests */ = {
+		4EA238D91D7796DC005AACF9 /* CalibreTests-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				4ED70DCC1D7DE8DD00A4DFBB /* Core */,
 				4EA238DC1D7796DC005AACF9 /* Info.plist */,
 			);
+			name = "CalibreTests-iOS";
 			path = CalibreTests;
 			sourceTree = "<group>";
 		};
@@ -178,20 +353,12 @@
 			isa = PBXGroup;
 			children = (
 				4EA238E81D779784005AACF9 /* Action.swift */,
-				4E857B311DCFB438009EAB95 /* Command.swift */,
+				4E030D861DD4C8120065D0F9 /* Bus.swift */,
 				4EA238EE1D779945005AACF9 /* Reducer.swift */,
 				4EA238EC1D7797FB005AACF9 /* State.swift */,
 				4EA238F21D779AE2005AACF9 /* Store.swift */,
 				4EA238EA1D7797DE005AACF9 /* Subscription.swift */,
 				4EA238F01D7799FD005AACF9 /* Types.swift */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		4ED70DCC1D7DE8DD00A4DFBB /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				4EA238DA1D7796DC005AACF9 /* CalibreTests.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -289,20 +456,134 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		4E03613A1DD61DC100ADF119 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E0361411DD61DC100ADF119 /* Calibre-macOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E03614F1DD61E4C00ADF119 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E0361561DD61E4C00ADF119 /* Calibre-tvOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E0361651DD6229500ADF119 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E03616C1DD6229500ADF119 /* Calibre-watchOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4EA238C81D7796DC005AACF9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EA238CF1D7796DC005AACF9 /* Calibre.h in Headers */,
+				4E0361361DD61D8600ADF119 /* Calibre_iOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4EA238CA1D7796DC005AACF9 /* Calibre */ = {
+		4E03613C1DD61DC100ADF119 /* Calibre-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4EA238DF1D7796DC005AACF9 /* Build configuration list for PBXNativeTarget "Calibre" */;
+			buildConfigurationList = 4E0361421DD61DC100ADF119 /* Build configuration list for PBXNativeTarget "Calibre-macOS" */;
+			buildPhases = (
+				4E0361381DD61DC100ADF119 /* Sources */,
+				4E0361391DD61DC100ADF119 /* Frameworks */,
+				4E03613A1DD61DC100ADF119 /* Headers */,
+				4E03613B1DD61DC100ADF119 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Calibre-macOS";
+			productName = "Calibre-macOS";
+			productReference = 4E03613D1DD61DC100ADF119 /* Calibre.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4E0361511DD61E4C00ADF119 /* Calibre-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E0361571DD61E4C00ADF119 /* Build configuration list for PBXNativeTarget "Calibre-tvOS" */;
+			buildPhases = (
+				4E03614D1DD61E4C00ADF119 /* Sources */,
+				4E03614E1DD61E4C00ADF119 /* Frameworks */,
+				4E03614F1DD61E4C00ADF119 /* Headers */,
+				4E0361501DD61E4C00ADF119 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Calibre-tvOS";
+			productName = "Calibre-tvOS";
+			productReference = 4E0361521DD61E4C00ADF119 /* Calibre.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4E0361671DD6229500ADF119 /* Calibre-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E03616D1DD6229500ADF119 /* Build configuration list for PBXNativeTarget "Calibre-watchOS" */;
+			buildPhases = (
+				4E0361631DD6229500ADF119 /* Sources */,
+				4E0361641DD6229500ADF119 /* Frameworks */,
+				4E0361651DD6229500ADF119 /* Headers */,
+				4E0361661DD6229500ADF119 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Calibre-watchOS";
+			productName = "Calibre-watchOS";
+			productReference = 4E0361681DD6229500ADF119 /* Calibre.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4E0361731DD6235900ADF119 /* CalibreTests-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E03617C1DD6235900ADF119 /* Build configuration list for PBXNativeTarget "CalibreTests-macOS" */;
+			buildPhases = (
+				4E0361701DD6235900ADF119 /* Sources */,
+				4E0361711DD6235900ADF119 /* Frameworks */,
+				4E0361721DD6235900ADF119 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E03617B1DD6235900ADF119 /* PBXTargetDependency */,
+			);
+			name = "CalibreTests-macOS";
+			productName = "CalibreTests-macOS";
+			productReference = 4E0361741DD6235900ADF119 /* CalibreTests-macOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4E03618B1DD623FD00ADF119 /* CalibreTests-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E0361941DD623FD00ADF119 /* Build configuration list for PBXNativeTarget "CalibreTests-tvOS" */;
+			buildPhases = (
+				4E0361881DD623FD00ADF119 /* Sources */,
+				4E0361891DD623FD00ADF119 /* Frameworks */,
+				4E03618A1DD623FD00ADF119 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E0361931DD623FD00ADF119 /* PBXTargetDependency */,
+			);
+			name = "CalibreTests-tvOS";
+			productName = "CalibreTests-tvOS";
+			productReference = 4E03618C1DD623FD00ADF119 /* CalibreTests-tvOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4EA238CA1D7796DC005AACF9 /* Calibre-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EA238DF1D7796DC005AACF9 /* Build configuration list for PBXNativeTarget "Calibre-iOS" */;
 			buildPhases = (
 				4EA238C61D7796DC005AACF9 /* Sources */,
 				4EA238C71D7796DC005AACF9 /* Frameworks */,
@@ -313,14 +594,14 @@
 			);
 			dependencies = (
 			);
-			name = Calibre;
+			name = "Calibre-iOS";
 			productName = Calibre;
 			productReference = 4EA238CB1D7796DC005AACF9 /* Calibre.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4EA238D41D7796DC005AACF9 /* CalibreTests */ = {
+		4EA238D41D7796DC005AACF9 /* CalibreTests-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4EA238E21D7796DC005AACF9 /* Build configuration list for PBXNativeTarget "CalibreTests" */;
+			buildConfigurationList = 4EA238E21D7796DC005AACF9 /* Build configuration list for PBXNativeTarget "CalibreTests-iOS" */;
 			buildPhases = (
 				4EA238D11D7796DC005AACF9 /* Sources */,
 				4EA238D21D7796DC005AACF9 /* Frameworks */,
@@ -331,9 +612,9 @@
 			dependencies = (
 				4EA238D81D7796DC005AACF9 /* PBXTargetDependency */,
 			);
-			name = CalibreTests;
+			name = "CalibreTests-iOS";
 			productName = CalibreTests;
-			productReference = 4EA238D51D7796DC005AACF9 /* CalibreTests.xctest */;
+			productReference = 4EA238D51D7796DC005AACF9 /* CalibreTests-iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		4ED70DD31D7F4D3900A4DFBB /* Calibre Example */ = {
@@ -360,14 +641,39 @@
 		4EA238C21D7796DC005AACF9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0800;
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Greenshire, Inc.";
 				TargetAttributes = {
+					4E03613C1DD61DC100ADF119 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5UUW96Q8NT;
+						ProvisioningStyle = Automatic;
+					};
+					4E0361511DD61E4C00ADF119 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5UUW96Q8NT;
+						ProvisioningStyle = Automatic;
+					};
+					4E0361671DD6229500ADF119 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5UUW96Q8NT;
+						ProvisioningStyle = Automatic;
+					};
+					4E0361731DD6235900ADF119 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5UUW96Q8NT;
+						ProvisioningStyle = Automatic;
+					};
+					4E03618B1DD623FD00ADF119 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5UUW96Q8NT;
+						ProvisioningStyle = Automatic;
+					};
 					4EA238CA1D7796DC005AACF9 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 5UUW96Q8NT;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
 					};
 					4EA238D41D7796DC005AACF9 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -392,14 +698,54 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4EA238CA1D7796DC005AACF9 /* Calibre */,
-				4EA238D41D7796DC005AACF9 /* CalibreTests */,
+				4EA238CA1D7796DC005AACF9 /* Calibre-iOS */,
+				4E03613C1DD61DC100ADF119 /* Calibre-macOS */,
+				4E0361511DD61E4C00ADF119 /* Calibre-tvOS */,
+				4E0361671DD6229500ADF119 /* Calibre-watchOS */,
+				4EA238D41D7796DC005AACF9 /* CalibreTests-iOS */,
+				4E0361731DD6235900ADF119 /* CalibreTests-macOS */,
+				4E03618B1DD623FD00ADF119 /* CalibreTests-tvOS */,
 				4ED70DD31D7F4D3900A4DFBB /* Calibre Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4E03613B1DD61DC100ADF119 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E0361501DD61E4C00ADF119 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E0361661DD6229500ADF119 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E0361721DD6235900ADF119 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E03618A1DD623FD00ADF119 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4EA238C91D7796DC005AACF9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -429,6 +775,66 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4E0361381DD61DC100ADF119 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E0361461DD61E2B00ADF119 /* Bus.swift in Sources */,
+				4E0361451DD61E2B00ADF119 /* Action.swift in Sources */,
+				4E0361481DD61E2B00ADF119 /* Reducer.swift in Sources */,
+				4E03614C1DD61E2B00ADF119 /* Types.swift in Sources */,
+				4E03614A1DD61E2B00ADF119 /* Store.swift in Sources */,
+				4E03614B1DD61E2B00ADF119 /* Subscription.swift in Sources */,
+				4E0361491DD61E2B00ADF119 /* State.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E03614D1DD61E4C00ADF119 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E03615B1DD61F6300ADF119 /* Bus.swift in Sources */,
+				4E03615A1DD61F6300ADF119 /* Action.swift in Sources */,
+				4E03615D1DD61F6300ADF119 /* Reducer.swift in Sources */,
+				4E0361611DD61F6300ADF119 /* Types.swift in Sources */,
+				4E03615F1DD61F6300ADF119 /* Store.swift in Sources */,
+				4E0361601DD61F6300ADF119 /* Subscription.swift in Sources */,
+				4E03615E1DD61F6300ADF119 /* State.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E0361631DD6229500ADF119 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E03619A1DD6258600ADF119 /* Bus.swift in Sources */,
+				4E0361991DD6258600ADF119 /* Action.swift in Sources */,
+				4E03619C1DD6258600ADF119 /* Reducer.swift in Sources */,
+				4E0361A01DD6258600ADF119 /* Types.swift in Sources */,
+				4E03619E1DD6258600ADF119 /* Store.swift in Sources */,
+				4E03619F1DD6258600ADF119 /* Subscription.swift in Sources */,
+				4E03619D1DD6258600ADF119 /* State.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E0361701DD6235900ADF119 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E0361871DD623B500ADF119 /* CalibreTests.swift in Sources */,
+				4E0361861DD623B500ADF119 /* BusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E0361881DD623FD00ADF119 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E0361981DD6254A00ADF119 /* CalibreTests.swift in Sources */,
+				4E0361971DD6254A00ADF119 /* BusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4EA238C61D7796DC005AACF9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -437,8 +843,8 @@
 				4EA238EB1D7797DE005AACF9 /* Subscription.swift in Sources */,
 				4EA238E91D779785005AACF9 /* Action.swift in Sources */,
 				4EA238F11D7799FD005AACF9 /* Types.swift in Sources */,
-				4E857B321DCFB438009EAB95 /* Command.swift in Sources */,
 				4EA238EF1D779945005AACF9 /* Reducer.swift in Sources */,
+				4E030D871DD4C8120065D0F9 /* Bus.swift in Sources */,
 				4EA238ED1D7797FB005AACF9 /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,7 +853,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EA238DB1D7796DC005AACF9 /* CalibreTests.swift in Sources */,
+				4E0361851DD623B400ADF119 /* CalibreTests.swift in Sources */,
+				4E0361841DD623B400ADF119 /* BusTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,14 +884,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4E03617B1DD6235900ADF119 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E03613C1DD61DC100ADF119 /* Calibre-macOS */;
+			targetProxy = 4E03617A1DD6235900ADF119 /* PBXContainerItemProxy */;
+		};
+		4E0361931DD623FD00ADF119 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E0361511DD61E4C00ADF119 /* Calibre-tvOS */;
+			targetProxy = 4E0361921DD623FD00ADF119 /* PBXContainerItemProxy */;
+		};
 		4EA238D81D7796DC005AACF9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4EA238CA1D7796DC005AACF9 /* Calibre */;
+			target = 4EA238CA1D7796DC005AACF9 /* Calibre-iOS */;
 			targetProxy = 4EA238D71D7796DC005AACF9 /* PBXContainerItemProxy */;
 		};
 		4ED70DFC1D7F52A100A4DFBB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4EA238CA1D7796DC005AACF9 /* Calibre */;
+			target = 4EA238CA1D7796DC005AACF9 /* Calibre-iOS */;
 			targetProxy = 4ED70DFB1D7F52A100A4DFBB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -501,6 +918,239 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4E0361431DD61DC100ADF119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5UUW96Q8NT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Calibre-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.greenshire.library.macos.Calibre-macOS";
+				PRODUCT_NAME = Calibre;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4E0361441DD61DC100ADF119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5UUW96Q8NT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Calibre-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.greenshire.library.macos.Calibre-macOS";
+				PRODUCT_NAME = Calibre;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4E0361581DD61E4C00ADF119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5UUW96Q8NT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Calibre-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.greenshire.library.tvos.Calibre-tvOS";
+				PRODUCT_NAME = Calibre;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		4E0361591DD61E4C00ADF119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5UUW96Q8NT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Calibre-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.greenshire.library.tvos.Calibre-tvOS";
+				PRODUCT_NAME = Calibre;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		4E03616E1DD6229500ADF119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5UUW96Q8NT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Calibre-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.greenshire.library.watchos.Calibre-watchOS";
+				PRODUCT_NAME = Calibre;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		4E03616F1DD6229500ADF119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5UUW96Q8NT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Calibre-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.greenshire.library.watchos.Calibre-watchOS";
+				PRODUCT_NAME = Calibre;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		4E03617D1DD6235900ADF119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5UUW96Q8NT;
+				INFOPLIST_FILE = "CalibreTests-macOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.greenshire.library.macos.CalibreTests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		4E03617E1DD6235900ADF119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5UUW96Q8NT;
+				INFOPLIST_FILE = "CalibreTests-macOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.greenshire.library.macos.CalibreTests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+		4E0361951DD623FD00ADF119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = 5UUW96Q8NT;
+				INFOPLIST_FILE = "CalibreTests-tvOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.greenshire.library.tvOS.CalibreTests-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		4E0361961DD623FD00ADF119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = 5UUW96Q8NT;
+				INFOPLIST_FILE = "CalibreTests-tvOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.greenshire.library.tvOS.CalibreTests-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
 		4EA238DD1D7796DC005AACF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -547,6 +1197,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2,3,4";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -592,6 +1243,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2,3,4";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -604,20 +1256,27 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Calibre/Info.plist;
+				INFOPLIST_FILE = "Calibre-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.greenshire.library.Calibre;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = co.greenshire.library.ios.Calibre;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = Calibre;
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvos appletvsimulator";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Debug;
 		};
@@ -628,19 +1287,26 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Calibre/Info.plist;
+				INFOPLIST_FILE = "Calibre-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.greenshire.library.Calibre;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = co.greenshire.library.ios.Calibre;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = Calibre;
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvos appletvsimulator";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Release;
 		};
@@ -648,11 +1314,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = CalibreTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = co.greenshire.ios.library.CalibreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos watchsimulator appletvsimulator watchos macosx appletvos";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Debug;
 		};
@@ -660,11 +1332,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = CalibreTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = co.greenshire.ios.library.CalibreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos watchsimulator appletvsimulator watchos macosx appletvos";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Release;
 		};
@@ -674,11 +1352,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Calibre Example/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "co.greenshire.example.Calibre-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Debug;
 		};
@@ -688,17 +1371,67 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Calibre Example/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "co.greenshire.example.Calibre-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4E0361421DD61DC100ADF119 /* Build configuration list for PBXNativeTarget "Calibre-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E0361431DD61DC100ADF119 /* Debug */,
+				4E0361441DD61DC100ADF119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E0361571DD61E4C00ADF119 /* Build configuration list for PBXNativeTarget "Calibre-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E0361581DD61E4C00ADF119 /* Debug */,
+				4E0361591DD61E4C00ADF119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E03616D1DD6229500ADF119 /* Build configuration list for PBXNativeTarget "Calibre-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E03616E1DD6229500ADF119 /* Debug */,
+				4E03616F1DD6229500ADF119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E03617C1DD6235900ADF119 /* Build configuration list for PBXNativeTarget "CalibreTests-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E03617D1DD6235900ADF119 /* Debug */,
+				4E03617E1DD6235900ADF119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E0361941DD623FD00ADF119 /* Build configuration list for PBXNativeTarget "CalibreTests-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E0361951DD623FD00ADF119 /* Debug */,
+				4E0361961DD623FD00ADF119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4EA238C51D7796DC005AACF9 /* Build configuration list for PBXProject "Calibre" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -708,7 +1441,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4EA238DF1D7796DC005AACF9 /* Build configuration list for PBXNativeTarget "Calibre" */ = {
+		4EA238DF1D7796DC005AACF9 /* Build configuration list for PBXNativeTarget "Calibre-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4EA238E01D7796DC005AACF9 /* Debug */,
@@ -717,7 +1450,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4EA238E21D7796DC005AACF9 /* Build configuration list for PBXNativeTarget "CalibreTests" */ = {
+		4EA238E21D7796DC005AACF9 /* Build configuration list for PBXNativeTarget "CalibreTests-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4EA238E31D7796DC005AACF9 /* Debug */,

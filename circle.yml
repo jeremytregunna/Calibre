@@ -1,17 +1,15 @@
 machine:
   xcode:
     version: 8.1
+
+dependencies:
+  override:
+    - sudo gem install xcpretty -N
+
 test:
   override:
-    - xctool
-      -reporter pretty
-      -reporter junit:$CIRCLE_TEST_REPORTS/xcode/results.xml
-      -reporter plain:$CIRCLE_ARTIFACTS/xctool.log
-      CODE_SIGNING_REQUIRED=NO
-      CODE_SIGN_IDENTITY=
-      PROVISIONING_PROFILE=
-      -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest'
-      -sdk iphonesimulator
-      -project Calibre.xcodeproj
-      -scheme "Calibre"
-      build test
+    - set -o pipefail
+    - xcodebuild test -scheme Calibre-iOS -configuration Release -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6s" | xcpretty -c -r junit -o $CIRCLE_TEST_REPORTS/test-report-ios.xml
+    - xcodebuild test -scheme Calibre-macOS -configuration Release | xcpretty -c -r junit -o $CIRCLE_TEST_REPORTS/test-report-mac.xml
+    - xcodebuild test -scheme Calibre-tvOS -configuration Release -sdk appletvsimulator -destination "platform=tvOS Simulator,name=Apple TV 1080p" | xcpretty -c -r junit -o $CIRCLE_TEST_REPORTS/test-report-tvos.xml
+

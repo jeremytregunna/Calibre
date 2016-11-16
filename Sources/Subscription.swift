@@ -21,20 +21,12 @@ public protocol Subscriber: AnySubscriber {
 extension Subscriber {
     public func _newState(state: Any) {
         if let customState = state as? SubscriberStateType {
-            #if swift(>=3)
-                newState(state: customState)
-            #else
-                newState(customState)
-            #endif
+            newState(state: customState)
         }
     }
 }
 
 struct Subscription<State: StateType> {
-    #if swift(>=3)
-        fileprivate(set) weak var subscriber: AnySubscriber?
-    #else
-        private(set) weak var subscriber: AnySubscriber?
-    #endif
+    fileprivate(set) weak var subscriber: AnySubscriber?
     let update: ((State) -> Any)?
 }
